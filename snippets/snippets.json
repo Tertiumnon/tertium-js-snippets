@@ -790,8 +790,8 @@
     "for": {
         "prefix": "for",
         "body": [
-            "const len = $1.length;",
-            "for (let i = 0; i < len; i += 1) {",
+            "const $1Len = $1.length;",
+            "for (let i = 0; i < $1Len; i += 1) {",
             "\tconst $1Item = $1[i];",
             "}"
         ],
