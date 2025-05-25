@@ -1,57 +1,58 @@
 {
-    "name": "tertium-js-snippets",
-    "displayName": "Tertium JS Snippets",
-    "description": "JavaScript Snippets for Visual Studio Code",
-    "publisher": "tertiumnon",
-    "repository": {
-        "url": "https://github.com/Tertiumnon/tertium-js-snippets"
-    },
-    "icon": "images/logo.png",
-    "version": "2.3.0",
-    "engines": {
-        "vscode": "^1.39.0"
-    },
-    "scripts": {
-        "git:add:all": "git add --all",
-        "commit": "cz",
-        "commit:all": "npm run git:add:all && npm run commit",
-        "md": "node helpers/get-md-snippet-declarations.js",
-        "release:major": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version major && git push origin && git push origin --tags",
-        "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version minor && git push origin && git push origin --tags",
-        "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version patch && git push origin && git push origin --tags",
-        "publish": "vsce package && vsce publish && rm *.vsix"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "commitizen": "^4.2.4",
-        "cz-conventional-changelog": "^3.3.0",
-        "generate-changelog": "^1.8.0"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
+  "name": "tertium-js-snippets",
+  "displayName": "Tertium JS Snippets",
+  "description": "JavaScript Snippets for Visual Studio Code",
+  "publisher": "tertiumnon",
+  "repository": {
+    "url": "https://github.com/Tertiumnon/tertium-js-snippets"
+  },
+  "icon": "images/logo.png",
+  "version": "2.3.0",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "md": "node helpers/get-md-snippet-declarations.js",
+    "changelog": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\"",
+    "pre:release": "npm run md && npm run changelog",
+    "release:patch": "npm run pre:release && git checkout main && npm version patch && git push && git push --tags && git checkout develop && git rebase main && git push",
+    "release:minor": "npm run pre:release && git checkout develop && npm version minor && git push && git push --tags && git checkout main && git merge develop && git push",
+    "release:major": "npm run pre:release && git checkout develop && npm version major && git push && git push --tags && git checkout main && git merge develop && git push",
+    "publish": "vsce package && vsce publish && rm *.vsix"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "generate-changelog": "^1.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  }
 }
