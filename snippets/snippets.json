@@ -57,6 +57,13 @@
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
         "prefix": "ao"
     },
+    "Array.prototype.at": {
+        "body": [
+            ".at($1)"
+        ],
+        "description": "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.",
+        "prefix": ".at"
+    },
     "Array.prototype.concat": {
         "body": [
             ".concat($1)"
@@ -261,6 +268,27 @@
         "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”).",
         "prefix": ".tol"
     },
+    "Array.prototype.toReversed": {
+        "body": [
+            ".toReversed()"
+        ],
+        "description": "The toReversed() method of Array instances returns a new array with the elements in reversed order. This method does not modify the original array.",
+        "prefix": ".tor"
+    },
+    "Array.prototype.toSorted": {
+        "body": [
+            ".toSorted($1)"
+        ],
+        "description": "The toSorted() method of Array instances returns a new array with the elements sorted. This method does not modify the original array.",
+        "prefix": ".tos"
+    },
+    "Array.prototype.toSpliced": {
+        "body": [
+            ".toSpliced($1)"
+        ],
+        "description": "The toSpliced() method of Array instances returns a new array with some elements removed and/or replaced at a given index. This method does not modify the original array.",
+        "prefix": ".tosp"
+    },
     "Array.prototype.toString": {
         "body": [
             ".toString($1)"
@@ -282,6 +310,13 @@
         "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
         "prefix": ".val"
     },
+    "Array.prototype.with": {
+        "body": [
+            ".with($1, )"
+        ],
+        "description": "The with() method of Array instances is a copying method that returns a new array with a changed element at a given index.",
+        "prefix": ".wi"
+    },
     "class": {
         "body": [
             "class $1 {",
@@ -290,6 +325,13 @@
         ],
         "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
         "prefix": "cla"
+    },
+    "Console.debug": {
+        "body": [
+            "console.debug($1)"
+        ],
+        "description": "Outputs a debug message to the Web Console.",
+        "prefix": "cde"
     },
     "Console.dir": {
         "body": [
@@ -325,13 +367,6 @@
         ],
         "description": "Outputs a warning message to the Web Console.",
         "prefix": "cw"
-    },
-    "Console.debug": {
-        "body": [
-            "console.debug($1)"
-        ],
-        "description": "Outputs a debug message to the Web Console.",
-        "prefix": "cde"
     },
     "debugger": {
         "body": [
@@ -930,6 +965,13 @@
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
         "prefix": "obj"
     },
+    "Object.hasOwn": {
+        "body": [
+            ".hasOwn($1)"
+        ],
+        "description": "The hasOwn() static method returns true if the specified object has the indicated property as its own property.",
+        "prefix": ".ha"
+    },
     "Object.is": {
         "body": [
             ".is($1, )"
@@ -1049,6 +1091,20 @@
         "description": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects.",
         "prefix": "pro"
     },
+    "Promise.allSettled": {
+        "body": [
+            "Promise.allSettled($1)"
+        ],
+        "description": "The Promise.allSettled() method returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
+        "prefix": "pros"
+    },
+    "Promise.any": {
+        "body": [
+            "Promise.any($1)"
+        ],
+        "description": "The Promise.any() method takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.",
+        "prefix": "proa"
+    },
     "Promise.prototype.catch": {
         "body": [
             ".catch($)"
@@ -1063,6 +1119,76 @@
         "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.",
         "prefix": ".the"
     },
+    "Promise.race": {
+        "body": [
+            "Promise.race($1)"
+        ],
+        "description": "The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects.",
+        "prefix": "pror"
+    },
+    "Promise.reject": {
+        "body": [
+            "Promise.reject($1)"
+        ],
+        "description": "The Promise.reject() method returns a Promise object that is rejected with a given reason.",
+        "prefix": "pror"
+    },
+    "Promise.resolve": {
+        "body": [
+            "Promise.resolve($1)"
+        ],
+        "description": "The Promise.resolve() method returns a Promise object that is resolved with a given value.",
+        "prefix": "pror"
+    },
+    "String.prototype.at": {
+        "body": [
+            ".at($1)"
+        ],
+        "description": "The at() method of String instances takes an integer value and returns a new String consisting of the single UTF-16 code unit located at the specified offset.",
+        "prefix": ".at"
+    },
+    "String.prototype.matchAll": {
+        "body": [
+            ".matchAll($1)"
+        ],
+        "description": "The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups.",
+        "prefix": ".ma"
+    },
+    "String.prototype.padEnd": {
+        "body": [
+            ".padEnd($1)"
+        ],
+        "description": "The padEnd() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
+        "prefix": ".pa"
+    },
+    "String.prototype.padStart": {
+        "body": [
+            ".padStart($1)"
+        ],
+        "description": "The padStart() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
+        "prefix": ".pa"
+    },
+    "String.prototype.replaceAll": {
+        "body": [
+            ".replaceAll($1, )"
+        ],
+        "description": "The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement.",
+        "prefix": ".re"
+    },
+    "String.prototype.trimEnd": {
+        "body": [
+            ".trimEnd()"
+        ],
+        "description": "The trimEnd() method removes whitespace from the end of a string.",
+        "prefix": ".tr"
+    },
+    "String.prototype.trimStart": {
+        "body": [
+            ".trimStart()"
+        ],
+        "description": "The trimStart() method removes whitespace from the beginning of a string.",
+        "prefix": ".tr"
+    },
     "switch": {
         "body": [
             "switch ($1) {",
@@ -1074,6 +1200,41 @@
         ],
         "description": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
         "prefix": "swi"
+    },
+    "Symbol.asyncDispose": {
+        "body": [
+            "Symbol.asyncDispose"
+        ],
+        "description": "A well-known symbol used to define an async disposal method for an object.",
+        "prefix": "syad"
+    },
+    "Symbol.dispose": {
+        "body": [
+            "Symbol.dispose"
+        ],
+        "description": "A well-known symbol used to define a disposal method for an object.",
+        "prefix": "syd"
+    },
+    "WeakMap.prototype.deleteAll": {
+        "body": [
+            ".deleteAll($1)"
+        ],
+        "description": "The deleteAll() method removes all elements from a WeakMap instance.",
+        "prefix": ".de"
+    },
+    "WeakSet.prototype.addAll": {
+        "body": [
+            ".addAll($1)"
+        ],
+        "description": "The addAll() method adds all elements to a WeakSet instance.",
+        "prefix": ".ad"
+    },
+    "WeakSet.prototype.deleteAll": {
+        "body": [
+            ".deleteAll($1)"
+        ],
+        "description": "The deleteAll() method removes all elements from a WeakSet instance.",
+        "prefix": ".de"
     },
     "while": {
         "body": [
@@ -1132,166 +1293,5 @@
         ],
         "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires.",
         "prefix": "set"
-    },
-    "Array.prototype.at": {
-        "body": [
-            ".at($1)"
-        ],
-        "description": "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.",
-        "prefix": ".at"
-    },
-    "Array.prototype.toReversed": {
-        "body": [
-            ".toReversed()"
-        ],
-        "description": "The toReversed() method of Array instances returns a new array with the elements in reversed order. This method does not modify the original array.",
-        "prefix": ".tor"
-    },
-    "Array.prototype.toSorted": {
-        "body": [
-            ".toSorted($1)"
-        ],
-        "description": "The toSorted() method of Array instances returns a new array with the elements sorted. This method does not modify the original array.",
-        "prefix": ".tos"
-    },
-    "Array.prototype.toSpliced": {
-        "body": [
-            ".toSpliced($1)"
-        ],
-        "description": "The toSpliced() method of Array instances returns a new array with some elements removed and/or replaced at a given index. This method does not modify the original array.",
-        "prefix": ".tosp"
-    },
-    "Array.prototype.with": {
-        "body": [
-            ".with($1, )"
-        ],
-        "description": "The with() method of Array instances is a copying method that returns a new array with a changed element at a given index.",
-        "prefix": ".wi"
-    },
-    "Object.hasOwn": {
-        "body": [
-            ".hasOwn($1)"
-        ],
-        "description": "The hasOwn() static method returns true if the specified object has the indicated property as its own property.",
-        "prefix": ".ha"
-    },
-    "Promise.any": {
-        "body": [
-            "Promise.any($1)"
-        ],
-        "description": "The Promise.any() method takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.",
-        "prefix": "proa"
-    },
-    "Promise.allSettled": {
-        "body": [
-            "Promise.allSettled($1)"
-        ],
-        "description": "The Promise.allSettled() method returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
-        "prefix": "pros"
-    },
-    "Promise.race": {
-        "body": [
-            "Promise.race($1)"
-        ],
-        "description": "The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects.",
-        "prefix": "pror"
-    },
-    "Promise.resolve": {
-        "body": [
-            "Promise.resolve($1)"
-        ],
-        "description": "The Promise.resolve() method returns a Promise object that is resolved with a given value.",
-        "prefix": "pror"
-    },
-    "Promise.reject": {
-        "body": [
-            "Promise.reject($1)"
-        ],
-        "description": "The Promise.reject() method returns a Promise object that is rejected with a given reason.",
-        "prefix": "pror"
-    },
-    "String.prototype.replaceAll": {
-        "body": [
-            ".replaceAll($1, )"
-        ],
-        "description": "The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement.",
-        "prefix": ".re"
-    },
-    "String.prototype.matchAll": {
-        "body": [
-            ".matchAll($1)"
-        ],
-        "description": "The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups.",
-        "prefix": ".ma"
-    },
-    "String.prototype.trimStart": {
-        "body": [
-            ".trimStart()"
-        ],
-        "description": "The trimStart() method removes whitespace from the beginning of a string.",
-        "prefix": ".tr"
-    },
-    "String.prototype.trimEnd": {
-        "body": [
-            ".trimEnd()"
-        ],
-        "description": "The trimEnd() method removes whitespace from the end of a string.",
-        "prefix": ".tr"
-    },
-    "String.prototype.padStart": {
-        "body": [
-            ".padStart($1)"
-        ],
-        "description": "The padStart() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
-        "prefix": ".pa"
-    },
-    "String.prototype.padEnd": {
-        "body": [
-            ".padEnd($1)"
-        ],
-        "description": "The padEnd() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
-        "prefix": ".pa"
-    },
-    "String.prototype.at": {
-        "body": [
-            ".at($1)"
-        ],
-        "description": "The at() method of String instances takes an integer value and returns a new String consisting of the single UTF-16 code unit located at the specified offset.",
-        "prefix": ".at"
-    },
-    "Symbol.asyncDispose": {
-        "body": [
-            "Symbol.asyncDispose"
-        ],
-        "description": "A well-known symbol used to define an async disposal method for an object.",
-        "prefix": "syad"
-    },
-    "Symbol.dispose": {
-        "body": [
-            "Symbol.dispose"
-        ],
-        "description": "A well-known symbol used to define a disposal method for an object.",
-        "prefix": "syd"
-    },
-    "WeakMap.prototype.deleteAll": {
-        "body": [
-            ".deleteAll($1)"
-        ],
-        "description": "The deleteAll() method removes all elements from a WeakMap instance.",
-        "prefix": ".de"
-    },
-    "WeakSet.prototype.addAll": {
-        "body": [
-            ".addAll($1)"
-        ],
-        "description": "The addAll() method adds all elements to a WeakSet instance.",
-        "prefix": ".ad"
-    },
-    "WeakSet.prototype.deleteAll": {
-        "body": [
-            ".deleteAll($1)"
-        ],
-        "description": "The deleteAll() method removes all elements from a WeakSet instance.",
-        "prefix": ".de"
     }
 }
