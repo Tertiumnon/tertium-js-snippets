@@ -17,7 +17,7 @@
     "md": "node helpers/get-md-snippet-declarations.js",
     "changelog": "changelog -M && git add CHANGELOG.md && git add --all && git commit -m \"updated CHANGELOG.md\"",
     "pre:release": "npm run md && npm run changelog",
-    "release:patch": "npm run pre:release && git checkout main && npm version patch && git push && git push --tags && git checkout develop && git rebase main && git push",
+    "release:patch": "npm run pre:release && git checkout main && npm version patch && git push && git push --tags && git checkout develop && git rebase main && git push && git checkout main",
     "release:minor": "npm run pre:release && git checkout develop && npm version minor && git push && git push --tags && git checkout main && git merge develop && git push",
     "release:major": "npm run pre:release && git checkout develop && npm version major && git push && git push --tags && git checkout main && git merge develop && git push",
     "publish": "vsce package && vsce publish && rm *.vsix"
