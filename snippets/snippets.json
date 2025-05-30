@@ -6,224 +6,224 @@
             "}"
         ],
         "description": "An anonymous function is a function without a function name.",
-        "prefix": "fun"
+        "prefix": "fu"
     },
     "Array": {
         "body": [
             "Array"
         ],
         "description": "The JavaScript Array class is a global object that is used in the construction of arrays which are high-level, list-like objects.",
-        "prefix": "arr"
+        "prefix": "ar"
     },
     "Array.from(arrayLike, mapFn, thisArg)": {
         "body": [
             ".from($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": ".fro"
+        "prefix": ".fr"
     },
     "Array.from(arrayLike, mapFn, thisArg) ": {
         "body": [
             "Array.from($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "arr"
+        "prefix": "af"
     },
     "Array.isArray(value)": {
         "body": [
             ".isArray($1)"
         ],
         "description": "The Array.isArray() method determines whether the passed value is an Array.",
-        "prefix": ".isa"
+        "prefix": ".is"
     },
     "Array.isArray(value) ": {
         "body": [
             "Array.isArray($1)"
         ],
         "description": "The Array.isArray() method determines whether the passed value is an Array.",
-        "prefix": "arr"
+        "prefix": "ai"
     },
     "Array.of(element0, element1, ... , elementN)": {
         "body": [
             ".of($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "of"
+        "prefix": ".of"
     },
     "Array.of(element0, element1, ... , elementN) ": {
         "body": [
             "Array.of($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "arr"
+        "prefix": "ao"
     },
     "Array.prototype.concat": {
         "body": [
             ".concat($1)"
         ],
         "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.",
-        "prefix": ".con"
+        "prefix": ".co"
     },
     "Array.prototype.copyWithin": {
         "body": [
             ".copyWithin($1)"
         ],
         "description": "The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length.",
-        "prefix": ".cop"
+        "prefix": ".co"
     },
     "Array.prototype.entries": {
         "body": [
             ".entries($1)"
         ],
         "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.",
-        "prefix": ".ent"
+        "prefix": ".en"
     },
     "Array.prototype.every": {
         "body": [
             ".every($1)"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.",
-        "prefix": ".eve"
+        "prefix": ".ev"
     },
     "Array.prototype.fill": {
         "body": [
             ".fill($1)"
         ],
         "description": "The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array.",
-        "prefix": ".fil"
+        "prefix": ".fi"
     },
     "Array.prototype.filter": {
         "body": [
             ".filter($1)"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function.",
-        "prefix": ".fil"
+        "prefix": ".fi"
     },
     "Array.prototype.find": {
         "body": [
             ".find($1)"
         ],
         "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function.",
-        "prefix": ".fin"
+        "prefix": ".fi"
     },
     "Array.prototype.findIndex": {
         "body": [
             ".findIndex($1 => $1)"
         ],
         "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.",
-        "prefix": ".fin"
+        "prefix": ".fii"
     },
     "Array.prototype.forEach": {
         "body": [
             ".forEach($1)"
         ],
         "description": "The forEach() method executes a provided function once for each array element.",
-        "prefix": ".for"
+        "prefix": ".foe"
     },
     "Array.prototype.includes": {
         "body": [
             ".includes($1)"
         ],
         "description": "The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.",
-        "prefix": ".inc"
+        "prefix": ".in"
     },
     "Array.prototype.indexOf": {
         "body": [
             ".indexOf($1)"
         ],
         "description": "The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.",
-        "prefix": ".ind"
+        "prefix": ".ino"
     },
     "Array.prototype.join": {
         "body": [
             ".join($1)"
         ],
         "description": "The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.",
-        "prefix": ".joi"
+        "prefix": ".jo"
     },
     "Array.prototype.keys": {
         "body": [
             ".keys($1)"
         ],
         "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
-        "prefix": ".key"
+        "prefix": ".ke"
     },
     "Array.prototype.lastIndexOf": {
         "body": [
             ".lastIndexOf($1)"
         ],
         "description": "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.",
-        "prefix": ".las"
+        "prefix": ".la"
     },
     "Array.prototype.map": {
         "body": [
             ".map($1)"
         ],
         "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array.",
-        "prefix": ".map"
+        "prefix": ".ma"
     },
     "Array.prototype.pop": {
         "body": [
             ".pop()"
         ],
         "description": "The pop() method removes the last element from an array and returns that element. This method changes the length of the array.",
-        "prefix": ".pop"
+        "prefix": ".po"
     },
     "Array.prototype.push": {
         "body": [
             ".push($1)"
         ],
         "description": "The push() method adds zero or more elements to the end of an array and returns the new length of the array.",
-        "prefix": ".pus"
+        "prefix": ".pu"
     },
     "Array.prototype.reduce": {
         "body": [
             ".reduce($1)"
         ],
         "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.",
-        "prefix": ".red"
+        "prefix": ".re"
     },
     "Array.prototype.reduceRight": {
         "body": [
             ".reduceRight($1)"
         ],
         "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.",
-        "prefix": ".red"
+        "prefix": ".re"
     },
     "Array.prototype.reverse": {
         "body": [
             ".reverse()"
         ],
         "description": "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.",
-        "prefix": ".rev"
+        "prefix": ".re"
     },
     "Array.prototype.shift": {
         "body": [
             ".shift()"
         ],
         "description": "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.",
-        "prefix": ".shi"
+        "prefix": ".sh"
     },
     "Array.prototype.slice": {
         "body": [
             ".slice()"
         ],
         "description": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.",
-        "prefix": ".sli"
+        "prefix": ".sl"
     },
     "Array.prototype.some": {
         "body": [
             ".some($1)"
         ],
         "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.",
-        "prefix": ".som"
+        "prefix": ".so"
     },
     "Array.prototype.sort": {
         "body": [
             ".sort($1)"
         ],
         "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.",
-        "prefix": ".sor"
+        "prefix": ".so"
     },
     "Array.prototype.sort full function": {
         "body": [
@@ -295,7 +295,7 @@
         "body": [
             "console.dir($1)"
         ],
-        "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object.",
+        "description": "Displays an interactive list of the properties of the specified JavaScript object.",
         "prefix": "cd"
     },
     "Console.error": {
@@ -309,14 +309,14 @@
         "body": [
             "console.info($1)"
         ],
-        "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log.",
+        "description": "Outputs an informational message to the Web Console.",
         "prefix": "ci"
     },
     "Console.log": {
         "body": [
             "console.log($1)"
         ],
-        "description": "The Console method log() outputs a message to the web console.",
+        "description": "Outputs a message to the Web Console.",
         "prefix": "cl"
     },
     "Console.warn": {
@@ -325,6 +325,13 @@
         ],
         "description": "Outputs a warning message to the Web Console.",
         "prefix": "cw"
+    },
+    "Console.debug": {
+        "body": [
+            "console.debug($1)"
+        ],
+        "description": "Outputs a debug message to the Web Console.",
+        "prefix": "cde"
     },
     "debugger": {
         "body": [
@@ -1125,5 +1132,166 @@
         ],
         "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires.",
         "prefix": "set"
+    },
+    "Array.prototype.at": {
+        "body": [
+            ".at($1)"
+        ],
+        "description": "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.",
+        "prefix": ".at"
+    },
+    "Array.prototype.toReversed": {
+        "body": [
+            ".toReversed()"
+        ],
+        "description": "The toReversed() method of Array instances returns a new array with the elements in reversed order. This method does not modify the original array.",
+        "prefix": ".tor"
+    },
+    "Array.prototype.toSorted": {
+        "body": [
+            ".toSorted($1)"
+        ],
+        "description": "The toSorted() method of Array instances returns a new array with the elements sorted. This method does not modify the original array.",
+        "prefix": ".tos"
+    },
+    "Array.prototype.toSpliced": {
+        "body": [
+            ".toSpliced($1)"
+        ],
+        "description": "The toSpliced() method of Array instances returns a new array with some elements removed and/or replaced at a given index. This method does not modify the original array.",
+        "prefix": ".tosp"
+    },
+    "Array.prototype.with": {
+        "body": [
+            ".with($1, )"
+        ],
+        "description": "The with() method of Array instances is a copying method that returns a new array with a changed element at a given index.",
+        "prefix": ".wi"
+    },
+    "Object.hasOwn": {
+        "body": [
+            ".hasOwn($1)"
+        ],
+        "description": "The hasOwn() static method returns true if the specified object has the indicated property as its own property.",
+        "prefix": ".ha"
+    },
+    "Promise.any": {
+        "body": [
+            "Promise.any($1)"
+        ],
+        "description": "The Promise.any() method takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.",
+        "prefix": "proa"
+    },
+    "Promise.allSettled": {
+        "body": [
+            "Promise.allSettled($1)"
+        ],
+        "description": "The Promise.allSettled() method returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
+        "prefix": "pros"
+    },
+    "Promise.race": {
+        "body": [
+            "Promise.race($1)"
+        ],
+        "description": "The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects.",
+        "prefix": "pror"
+    },
+    "Promise.resolve": {
+        "body": [
+            "Promise.resolve($1)"
+        ],
+        "description": "The Promise.resolve() method returns a Promise object that is resolved with a given value.",
+        "prefix": "pror"
+    },
+    "Promise.reject": {
+        "body": [
+            "Promise.reject($1)"
+        ],
+        "description": "The Promise.reject() method returns a Promise object that is rejected with a given reason.",
+        "prefix": "pror"
+    },
+    "String.prototype.replaceAll": {
+        "body": [
+            ".replaceAll($1, )"
+        ],
+        "description": "The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement.",
+        "prefix": ".re"
+    },
+    "String.prototype.matchAll": {
+        "body": [
+            ".matchAll($1)"
+        ],
+        "description": "The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups.",
+        "prefix": ".ma"
+    },
+    "String.prototype.trimStart": {
+        "body": [
+            ".trimStart()"
+        ],
+        "description": "The trimStart() method removes whitespace from the beginning of a string.",
+        "prefix": ".tr"
+    },
+    "String.prototype.trimEnd": {
+        "body": [
+            ".trimEnd()"
+        ],
+        "description": "The trimEnd() method removes whitespace from the end of a string.",
+        "prefix": ".tr"
+    },
+    "String.prototype.padStart": {
+        "body": [
+            ".padStart($1)"
+        ],
+        "description": "The padStart() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
+        "prefix": ".pa"
+    },
+    "String.prototype.padEnd": {
+        "body": [
+            ".padEnd($1)"
+        ],
+        "description": "The padEnd() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
+        "prefix": ".pa"
+    },
+    "String.prototype.at": {
+        "body": [
+            ".at($1)"
+        ],
+        "description": "The at() method of String instances takes an integer value and returns a new String consisting of the single UTF-16 code unit located at the specified offset.",
+        "prefix": ".at"
+    },
+    "Symbol.asyncDispose": {
+        "body": [
+            "Symbol.asyncDispose"
+        ],
+        "description": "A well-known symbol used to define an async disposal method for an object.",
+        "prefix": "syad"
+    },
+    "Symbol.dispose": {
+        "body": [
+            "Symbol.dispose"
+        ],
+        "description": "A well-known symbol used to define a disposal method for an object.",
+        "prefix": "syd"
+    },
+    "WeakMap.prototype.deleteAll": {
+        "body": [
+            ".deleteAll($1)"
+        ],
+        "description": "The deleteAll() method removes all elements from a WeakMap instance.",
+        "prefix": ".de"
+    },
+    "WeakSet.prototype.addAll": {
+        "body": [
+            ".addAll($1)"
+        ],
+        "description": "The addAll() method adds all elements to a WeakSet instance.",
+        "prefix": ".ad"
+    },
+    "WeakSet.prototype.deleteAll": {
+        "body": [
+            ".deleteAll($1)"
+        ],
+        "description": "The deleteAll() method removes all elements from a WeakSet instance.",
+        "prefix": ".de"
     }
 }
