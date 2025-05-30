@@ -1,4 +1,22 @@
+# Ignore files and folders
 .vscode/**
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+
+# Test files
+**/*.test.js
+**/*.spec.js
+**/test/**
+**/tests/**
+
+# Git files
+**/.git/**
+**/.github/**
+
+# Node modules
+**/node_modules/**
+
+# Scripts and helpers
+**/scripts/**
+**/helpers/**
