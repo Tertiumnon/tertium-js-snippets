@@ -1,3 +1,9 @@
+## 3.0.0 (2025-05-30)
+
+##### Build System / Dependencies
+
+*  replace node to bun ([47c691d0](https://github.com/Tertiumnon/tertium-js-snippets/commit/47c691d0b29e57e059c823e9f383a819835ed6d2))
+
 ### 2.3.0 (2023-11-04)
 
 ##### New Features
