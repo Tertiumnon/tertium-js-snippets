@@ -13,7 +13,6 @@ Collection of JavaScript snippets for your productivity.
 - `.at` → `.at($1)`
 - `.bin` → `.bind($1)`
 - `.cal` → `.call($1)`
-- `.cat` → `.catch($1)`
 - `.cla` → `.classList`
 - `.co` → `.concat($1)`
 - `.co` → `.copyWithin($1)`
@@ -21,7 +20,6 @@ Collection of JavaScript snippets for your productivity.
 - `.cre` → `.createElement($1)`
 - `.dis` → `.dispatchEvent($1)`
 - `.en` → `.entries($1)`
-- `.ent` → `.entries($1)`
 - `.ev` → `.every($1)`
 - `.fi` → `.fill($1)`
 - `.fi` → `.filter($1)`
@@ -33,36 +31,28 @@ Collection of JavaScript snippets for your productivity.
 - `.fndx` → `.findIndex($1 => $1)`
 - `.fr` → `.from($1)`
 - `.frch` → `.forEach($1)`
-- `.fre` → `.fromEntries($1)`
 - `.gea` → `.getAttribute($1)`
 - `.gebc` → `.getElementsByClassName($1)`
 - `.gebi` → `.getElementById($1)`
 - `.gebt` → `.getElementsByTagName($1)`
-- `.hao` → `.hasOwn($1)`
 - `.in` → `.includes($1)`
 - `.ino` → `.indexOf($1)`
 - `.is` → `.isArray($1)`
-- `.ise` → `.isExtensible($1)`
-- `.isf` → `.isFrozen($1)`
-- `.iss` → `.isSealed($1)`
-- `.isv` → `.is($1, )`
 - `.jo` → `.join($1)`
 - `.ke` → `.keys($1)`
 - `.la` → `.lastIndexOf($1)`
 - `.ma` → `.map($1)`
-- `.ma` → `.matchAll($1)`
 - `.of` → `.of($1)`
 - `.po` → `.pop()`
 - `.pro` → `.prototype`
 - `.pu` → `.push($1)`
-- `.re` → `.reduce($1)`
-- `.re` → `.reduceRight($1)`
-- `.re` → `.reverse()`
 - `.rea` → `.removeAttribute($1)`
-- `.rea` → `.replaceAll($1, )`
+- `.red` → `.reduce($1)`
+- `.rel` → `.removeEventListener($1, )`
 - `.rem` → `.remove($1)`
-- `.rem` → `.removeEventListener($1, )`
 - `.rep` → `.replace($1, )`
+- `.rer` → `.reduceRight($1)`
+- `.rev` → `.reverse()`
 - `.sea` → `.setAttribute($1, )`
 - `.sh` → `.shift()`
 - `.sl` → `.slice()`
@@ -134,21 +124,13 @@ Collection of JavaScript snippets for your productivity.
 - `iife` → `(function() { $1 })()`
 - `imp` → `import from $1`
 - `inp` → `input`
-- `jsonpar` → `JSON.parse($1)`
-- `jsonstr` → `JSON.stringify($1)`
+- `jsopa` → `JSON.parse($1)`
+- `jsost` → `JSON.stringify($1)`
 - `key` → `keydown`
 - `mou` → `mouseout`
 - `mou` → `mouseover`
-- `nulc` → `$1 ?? $2`
-- `objent` → `Object.entries($1)`
-- `objfre` → `Object.fromEntries($1)`
-- `objfrz` → `Object.freeze($1)`
-- `objise` → `Object.isExtensible($1)`
-- `objisf` → `Object.isFrozen($1)`
-- `objiss` → `Object.isSealed($1)`
-- `objisv` → `Object.is($1, )`
-- `opc` → `$1?.$2`
-- `prmals` → `Promise.allSettled($1)`
-- `prmany` → `Promise.any($1)`
-- `wea` → `new WeakRef($1)`
+- `prore` → `Promise.resolve($1)`
+- `ran` → `Math.floor(Math.random() * ($2 - $1 + 1)) + $1`
+- `rda` → `[...new Set($1)]`
+- `saf` → `const $1 = ($2) => $3`
 <!-- SNIPPETS_END -->
