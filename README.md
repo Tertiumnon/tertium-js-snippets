@@ -13,6 +13,7 @@ Collection of JavaScript snippets for your productivity.
 - `.at` → `.at($1)`
 - `.bin` → `.bind($1)`
 - `.cal` → `.call($1)`
+- `.cat` → `.catch($1)`
 - `.cla` → `.classList`
 - `.co` → `.concat($1)`
 - `.co` → `.copyWithin($1)`
@@ -25,6 +26,10 @@ Collection of JavaScript snippets for your productivity.
 - `.fi` → `.fill($1)`
 - `.fi` → `.filter($1)`
 - `.fi` → `.find($1)`
+- `.fil` → `.findLast($1)`
+- `.fl` → `.flat($1)`
+- `.fli` → `.findLastIndex($1)`
+- `.flm` → `.flatMap($1)`
 - `.fndx` → `.findIndex($1 => $1)`
 - `.fr` → `.from($1)`
 - `.frch` → `.forEach($1)`
@@ -33,6 +38,7 @@ Collection of JavaScript snippets for your productivity.
 - `.get` → `.getElementById($1)`
 - `.get` → `.getElementsByClassName($1)`
 - `.get` → `.getElementsByTagName($1)`
+- `.hao` → `.hasOwn($1)`
 - `.has` → `.hasAttribute($1)`
 - `.in` → `.includes($1)`
 - `.ino` → `.indexOf($1)`
@@ -45,6 +51,7 @@ Collection of JavaScript snippets for your productivity.
 - `.ke` → `.keys($1)`
 - `.la` → `.lastIndexOf($1)`
 - `.ma` → `.map($1)`
+- `.ma` → `.matchAll($1)`
 - `.of` → `.of($1)`
 - `.po` → `.pop()`
 - `.pro` → `.prototype`
@@ -54,6 +61,7 @@ Collection of JavaScript snippets for your productivity.
 - `.re` → `.reduce($1)`
 - `.re` → `.reduceRight($1)`
 - `.re` → `.reverse()`
+- `.rea` → `.replaceAll($1, )`
 - `.rem` → `.remove($1)`
 - `.rem` → `.removeAttribute($1)`
 - `.rem` → `.removeEventListener($1, )`
@@ -93,7 +101,7 @@ Collection of JavaScript snippets for your productivity.
 - `cgr` → `console.group($1)`
 - `cha` → `change`
 - `ci` → `console.info($1)`
-- `cla` → `class $1 { constructor(props) {} }`
+- `cla` → `class $1 { constructor($2) {} }`
 - `clg` → `console.log($1)`
 - `cli` → `click`
 - `clj` → `console.log(JSON.stringify($1, null, 2))`
@@ -111,6 +119,7 @@ Collection of JavaScript snippets for your productivity.
 - `do` → `do { $1 } while ()`
 - `doc` → `document`
 - `exp` → `export`
+- `fin` → `new FinalizationRegistry($1 => $1)`
 - `fnar` → `($1) => { }`
 - `fnarm` → `($1) => $1`
 - `foc` → `focus`
@@ -133,6 +142,7 @@ Collection of JavaScript snippets for your productivity.
 - `key` → `keydown`
 - `mou` → `mouseout`
 - `mou` → `mouseover`
+- `nulc` → `$1 ?? $2`
 - `objent` → `Object.entries($1)`
 - `objfre` → `Object.fromEntries($1)`
 - `objfrz` → `Object.freeze($1)`
@@ -140,6 +150,10 @@ Collection of JavaScript snippets for your productivity.
 - `objisf` → `Object.isFrozen($1)`
 - `objiss` → `Object.isSealed($1)`
 - `objisv` → `Object.is($1, )`
+- `opc` → `$1?.$2`
+- `prmals` → `Promise.allSettled($1)`
+- `prmany` → `Promise.any($1)`
+- `wea` → `new WeakRef($1)`
 <!-- SNIPPETS_END -->
 
 ## Snippet Mnemonic (Prefix) Generation Rules
