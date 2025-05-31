@@ -275,13 +275,6 @@
         "description": "The toLocaleString() method returns a string representing the elements of the array.",
         "prefix": ".tols"
     },
-    "Array.prototype.toLocaleString": {
-        "body": [
-            ".toLocaleString($1)"
-        ],
-        "description": "The toLocaleString() method returns a string representing the elements of the array.",
-        "prefix": ".tols"
-    },
     "Array.prototype.toReversed": {
         "body": [
             ".toReversed()"
