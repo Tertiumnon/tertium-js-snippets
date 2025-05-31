@@ -211,36 +211,50 @@ Collection of JavaScript snippets for your productivity.
 - `whi` → `while ($1) { }`
 <!-- SNIPPETS_END -->
 
-## Mnemonic (Prefix) Generation Rule
+## Snippet Mnemonic (Prefix) Generation Rules
 
-If the snippet is a method call (starts with a dot in body):
+To ensure all snippet prefixes are unique, memorable, and consistent, follow these rules:
 
-Prefix: . + first two letters of the method name (after the dot, in camelCase or PascalCase, use only letters).
-For each additional camelCase/PascalCase word in the method name, add its first letter.
-Example:
-.findIndex($1) → .fi (find) + i (Index) → .fii
-.fromEntries($1) → .fr (from) + e (Entries) → .fre
-.isArray($1) → .is (is) + a (Array) → .isa
-.toLocaleString($1) → .to (to) + l (Locale) + s (String) → .tols
-If the snippet is a global or static method (e.g., Object.freeze($1)):
+### 1. Dot-methods (e.g., `.methodName`)
+- Prefix: `.` + first two letters of the first word + first letter of each subsequent camelCase/PascalCase word.
+- **Examples:**
+  - `.toLocaleString($1)` → `.tols`
+  - `.findIndex($1)` → `.fii`
+  - `.fromCharCode($1)` → `.frcc`
+  - `.isFrozen($1)` → `.isf`
+  - `.isSealed($1)` → `.iss`
 
-Prefix: first three letters of the object/class name (lowercase) + first three letters of the method name (lowercase).
-Example:
-Object.freeze($1) → objfrz
-Object.fromEntries($1) → objfro
-Promise.resolve($1) → pror
-Array.from($1) → arrfro
-If the snippet is a keyword or language construct:
+### 2. Static/Global Methods (e.g., `Object.method`, `Array.method`, `JSON.method`)
+- Prefix: first three letters of the object/class (lowercase) + first three unique letters of the method name (lowercase).
+- If the method name is short or ambiguous, add a distinguishing letter from the next word or argument type.
+- **Examples:**
+  - `Object.freeze($1)` → `objfrz`
+  - `Object.is($1, )` → `objisv` (for "is value", to distinguish from `isExtensible`, `isFrozen`, etc.)
+  - `Object.isExtensible($1)` → `objise`
+  - `Object.isFrozen($1)` → `objisf`
+  - `Object.isSealed($1)` → `objiss`
+  - `JSON.parse($1)` → `jsonpar`
+  - `JSON.stringify($1)` → `jsonstr`
+  - `Promise.resolve($1)` → `prmres`
 
-Prefix: first three letters of the keyword.
-Example:
-function → fun
-class → cla
-switch → swi
-If the snippet is a utility or common pattern:
+### 3. Keywords or Language Constructs
+- Prefix: first three letters of the keyword.
+- **Examples:**
+  - `function` → `fun`
+  - `class` → `cla`
+  - `switch` → `swi`
 
-Prefix: first letter of each word in the description or name, up to 3–4 letters, or a well-known abbreviation.
-Example:
-"remove duplicates array" → rda
-"deep clone object" → dco or dcl
-"random integer" → ran
+### 4. Utilities and Patterns
+- Prefix: first letter of each word in the description or a well-known abbreviation.
+- **Examples:**
+  - "remove duplicates array" → `rda`
+  - "deep clone object" → `dcl`
+  - "random integer" → `ran`
+  - "short arrow function" → `saf`
+
+### 5. If a collision occurs
+- Add more letters from the method or object name until the prefix is unique.
+
+---
+
+**These rules guarantee that all snippet prefixes are unique, easy to type, and easy to remember.**

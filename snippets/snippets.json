@@ -272,7 +272,14 @@
         "body": [
             ".toLocaleString($1)"
         ],
-        "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”).",
+        "description": "The toLocaleString() method returns a string representing the elements of the array.",
+        "prefix": ".tols"
+    },
+    "Array.prototype.toLocaleString": {
+        "body": [
+            ".toLocaleString($1)"
+        ],
+        "description": "The toLocaleString() method returns a string representing the elements of the array.",
         "prefix": ".tols"
     },
     "Array.prototype.toReversed": {
@@ -864,210 +871,19 @@
         "description": "Checks if an object is empty.",
         "prefix": "ieo"
     },
-    "JSON .parse": {
+    "JSON.parse": {
         "body": [
             "JSON.parse($1)"
         ],
-        "description": "The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.",
-        "prefix": "json"
+        "description": "Parses a JSON string.",
+        "prefix": "jsonpar"
     },
-    "JSON .stringify": {
+    "JSON.stringify": {
         "body": [
             "JSON.stringify($1)"
         ],
-        "description": "The JSON.stringify() method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.",
-        "prefix": "json"
-    },
-    "merge arrays": {
-        "body": [
-            "[...$1, ...$2]"
-        ],
-        "description": "Merges two arrays.",
-        "prefix": "mea"
-    },
-    "New Map": {
-        "body": [
-            "new Map($1)"
-        ],
-        "description": "The Map object holds key-value pairs and remembers the original insertion order of the keys.",
-        "prefix": "map"
-    },
-    "New Promise": {
-        "body": [
-            "new Promise((resolve, reject) => {",
-            "\tresolve($1)",
-            "})"
-        ],
-        "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
-        "prefix": "pro"
-    },
-    "New Set": {
-        "body": [
-            "new Set($1)"
-        ],
-        "description": "The Set object lets you store unique values of any type, whether primitive values or object references.",
-        "prefix": "set"
-    },
-    "Node.appendChild": {
-        "body": [
-            ".appendChild($1)"
-        ],
-        "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node.",
-        "prefix": ".app"
-    },
-    "Node.cloneNode": {
-        "body": [
-            ".cloneNode($1)"
-        ],
-        "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called.",
-        "prefix": ".clo"
-    },
-    "Node.contains": {
-        "body": [
-            ".contains($1)"
-        ],
-        "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node.",
-        "prefix": ".con"
-    },
-    "Node.innerHTML": {
-        "body": [
-            ".innerHTML"
-        ],
-        "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element.",
-        "prefix": ".inn"
-    },
-    "Node.insertBefore": {
-        "body": [
-            ".insertBefore($1)"
-        ],
-        "description": "The Node.insertBefore() method inserts a node before the reference node as a child of a specified parent node.",
-        "prefix": ".ins"
-    },
-    "Node.outerHTML": {
-        "body": [
-            ".outerHTML"
-        ],
-        "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants.",
-        "prefix": ".out"
-    },
-    "Node.parentElement": {
-        "body": [
-            ".parentElement"
-        ],
-        "description": "The Node.parentElement read-only property returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.",
-        "prefix": ".par"
-    },
-    "Node.parentNode": {
-        "body": [
-            ".parentNode"
-        ],
-        "description": "The Node.parentNode read-only property returns the parent of the specified node in the DOM tree.",
-        "prefix": ".par"
-    },
-    "Node.removeChild": {
-        "body": [
-            ".removeChild($1)"
-        ],
-        "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node.",
-        "prefix": ".rem"
-    },
-    "Node.replaceChild": {
-        "body": [
-            ".replaceChild($1, )"
-        ],
-        "description": "The Node.replaceChild() method replaces a child node within the given (parent) node.",
-        "prefix": ".rep"
-    },
-    "Node.textContent": {
-        "body": [
-            ".textContent"
-        ],
-        "description": "The textContent property of the Node interface represents the text content of the node and its descendants.",
-        "prefix": ".tex"
-    },
-    "Number.parseFloat": {
-        "body": [
-            "parseFloat($1)"
-        ],
-        "description": "The Number.parseFloat() method parses a string argument and returns a floating point number.",
-        "prefix": "par"
-    },
-    "Number.parseInt": {
-        "body": [
-            "parseInt($1)"
-        ],
-        "description": "The Number.parseInt() method parses a string argument and returns an integer of the specified radix or base.",
-        "prefix": "par"
-    },
-    "Number.toFixed": {
-        "body": [
-            ".toFixed($1)"
-        ],
-        "description": "The toFixed() method formats a number using fixed-point notation.",
-        "prefix": ".tof"
-    },
-    "Object": {
-        "body": [
-            "Object"
-        ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
-        "prefix": "obj"
-    },
-    "Object.assign(target, ...sources)": {
-        "body": [
-            ".assign($1, )"
-        ],
-        "description": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
-        "prefix": ".ass"
-    },
-    "Object.assign(target, ...sources) ": {
-        "body": [
-            "Object.assign($1, )"
-        ],
-        "description": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
-        "prefix": "obj"
-    },
-    "Object.create(proto, propertiesObject)": {
-        "body": [
-            ".create($1)"
-        ],
-        "description": "The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.",
-        "prefix": ".cre"
-    },
-    "Object.create(proto, propertiesObject) ": {
-        "body": [
-            "Object.create($1, )"
-        ],
-        "description": "The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.",
-        "prefix": "obj"
-    },
-    "Object.defineProperties(obj, props)": {
-        "body": [
-            ".defineProperties($1, )"
-        ],
-        "description": "The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.",
-        "prefix": ".def"
-    },
-    "Object.defineProperties(obj, props) ": {
-        "body": [
-            "Object.defineProperties($1, )"
-        ],
-        "description": "The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.",
-        "prefix": "obj"
-    },
-    "Object.defineProperty(obj, prop, descriptor)": {
-        "body": [
-            ".defineProperty($1, )"
-        ],
-        "description": "The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.",
-        "prefix": ".def"
-    },
-    "Object.defineProperty(obj, prop, descriptor) ": {
-        "body": [
-            "Object.defineProperty($1, )"
-        ],
-        "description": "The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.",
-        "prefix": "obj"
+        "description": "Converts a value to a JSON string.",
+        "prefix": "jsonstr"
     },
     "Object.entries(obj)": {
         "body": [
@@ -1095,49 +911,42 @@
             ".fromEntries($1)"
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": ".frn"
+        "prefix": ".fre"
     },
     "Object.fromEntries(iterable) ": {
         "body": [
             "Object.fromEntries($1)"
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": "objfrn"
-    },
-    "Object.hasOwn": {
-        "body": [
-            ".hasOwn($1)"
-        ],
-        "description": "The hasOwn() static method returns true if the specified object has the indicated property as its own property.",
-        "prefix": ".ha"
+        "prefix": "objfre"
     },
     "Object.is": {
         "body": [
             ".is($1, )"
         ],
         "description": "The Object.is() method determines whether two values are the same value.",
-        "prefix": ".is"
+        "prefix": ".isv"
     },
     "Object.is(value1, value2)": {
         "body": [
             "Object.is($1, )"
         ],
         "description": "The Object.is() method determines whether two values are the same value.",
-        "prefix": "obj"
+        "prefix": "objisv"
     },
     "Object.isExtensible": {
         "body": [
             ".isExtensible($1)"
         ],
-        "description": "The Object.isExtensible() method determines if an object is extensible (whether it can have new properties added to it).",
+        "description": "The Object.isExtensible() method determines if an object is extensible.",
         "prefix": ".ise"
     },
     "Object.isExtensible(obj)": {
         "body": [
             "Object.isExtensible($1)"
         ],
-        "description": "The Object.isExtensible() method determines if an object is extensible (whether it can have new properties added to it).",
-        "prefix": "obj"
+        "description": "The Object.isExtensible() method determines if an object is extensible.",
+        "prefix": "objise"
     },
     "Object.isFrozen": {
         "body": [
@@ -1151,323 +960,20 @@
             "Object.isFrozen($1)"
         ],
         "description": "The Object.isFrozen() determines if an object is frozen.",
-        "prefix": "obj"
+        "prefix": "objisf"
     },
     "Object.isSealed": {
         "body": [
             ".isSealed($1)"
         ],
-        "description": "The Object.isSealed() method determines if an object is sealed.",
+        "description": "The Object.isSealed() determines if an object is sealed.",
         "prefix": ".iss"
     },
     "Object.isSealed(obj)": {
         "body": [
             "Object.isSealed($1)"
         ],
-        "description": "The Object.isSealed() method determines if an object is sealed.",
-        "prefix": "obj"
-    },
-    "Object.keys": {
-        "body": [
-            ".keys($1)"
-        ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
-        "prefix": ".key"
-    },
-    "Object.keys(obj)": {
-        "body": [
-            "Object.keys($1)"
-        ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
-        "prefix": "obj"
-    },
-    "Object.preventExtensions": {
-        "body": [
-            ".preventExtensions($1)"
-        ],
-        "description": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
-        "prefix": ".pre"
-    },
-    "Object.preventExtensions(obj)": {
-        "body": [
-            "Object.preventExtensions($1)"
-        ],
-        "description": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
-        "prefix": "obj"
-    },
-    "Object.seal": {
-        "body": [
-            ".seal($1)"
-        ],
-        "description": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
-        "prefix": ".sea"
-    },
-    "Object.seal(obj)": {
-        "body": [
-            "Object.seal($1)"
-        ],
-        "description": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
-        "prefix": "obj"
-    },
-    "Object.values": {
-        "body": [
-            ".values($1)"
-        ],
-        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
-        "prefix": ".val"
-    },
-    "Object.values(obj)": {
-        "body": [
-            "Object.values($1)"
-        ],
-        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
-        "prefix": "obj"
-    },
-    "Promise.all": {
-        "body": [
-            "Promise.all($1)"
-        ],
-        "description": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects.",
-        "prefix": "pro"
-    },
-    "Promise.allSettled": {
-        "body": [
-            "Promise.allSettled($1)"
-        ],
-        "description": "The Promise.allSettled() method returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
-        "prefix": "pros"
-    },
-    "Promise.any": {
-        "body": [
-            "Promise.any($1)"
-        ],
-        "description": "The Promise.any() method takes an iterable of Promise objects and, as soon as one of the promises in the iterable fulfills, returns a single promise that resolves with the value from that promise.",
-        "prefix": "proa"
-    },
-    "Promise.prototype.catch": {
-        "body": [
-            ".catch($)"
-        ],
-        "description": "The catch() method returns a Promise and deals with rejected cases only. ",
-        "prefix": ".cat"
-    },
-    "Promise.prototype.then": {
-        "body": [
-            ".then($1 => $1)"
-        ],
-        "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.",
-        "prefix": ".the"
-    },
-    "Promise.race": {
-        "body": [
-            "Promise.race($1)"
-        ],
-        "description": "The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects.",
-        "prefix": "pror"
-    },
-    "Promise.reject": {
-        "body": [
-            "Promise.reject($1)"
-        ],
-        "description": "The Promise.reject() method returns a Promise object that is rejected with a given reason.",
-        "prefix": "prmrjt"
-    },
-    "Promise.resolve": {
-        "body": [
-            "Promise.resolve($1)"
-        ],
-        "description": "The Promise.resolve() method returns a Promise object that is resolved with a given value.",
-        "prefix": "prmres"
-    },
-    "random integer": {
-        "body": [
-            "Math.floor(Math.random() * ($2 - $1 + 1)) + $1"
-        ],
-        "description": "Generates a random integer between two values, inclusive.",
-        "prefix": "ran"
-    },
-    "remove duplicates array": {
-        "body": [
-            "[...new Set($1)]"
-        ],
-        "description": "Removes duplicate values from an array.",
-        "prefix": "rda"
-    },
-    "short arrow function": {
-        "body": [
-            "const $1 = ($2) => $3"
-        ],
-        "description": "Creates a concise arrow function.",
-        "prefix": "saf"
-    },
-    "String.prototype.at": {
-        "body": [
-            ".at($1)"
-        ],
-        "description": "The at() method of String instances takes an integer value and returns a new String consisting of the single UTF-16 code unit located at the specified offset.",
-        "prefix": ".at"
-    },
-    "String.prototype.matchAll": {
-        "body": [
-            ".matchAll($1)"
-        ],
-        "description": "The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups.",
-        "prefix": ".ma"
-    },
-    "String.prototype.padEnd": {
-        "body": [
-            ".padEnd($1)"
-        ],
-        "description": "The padEnd() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
-        "prefix": ".pa"
-    },
-    "String.prototype.padStart": {
-        "body": [
-            ".padStart($1)"
-        ],
-        "description": "The padStart() method pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length.",
-        "prefix": ".pa"
-    },
-    "String.prototype.replaceAll": {
-        "body": [
-            ".replaceAll($1, )"
-        ],
-        "description": "The replaceAll() method returns a new string with all matches of a pattern replaced by a replacement.",
-        "prefix": ".re"
-    },
-    "String.prototype.trimEnd": {
-        "body": [
-            ".trimEnd()"
-        ],
-        "description": "The trimEnd() method removes whitespace from the end of a string.",
-        "prefix": ".tr"
-    },
-    "String.prototype.trimStart": {
-        "body": [
-            ".trimStart()"
-        ],
-        "description": "The trimStart() method removes whitespace from the beginning of a string.",
-        "prefix": ".tr"
-    },
-    "switch": {
-        "body": [
-            "switch ($1) {",
-            "\tcase :",
-            "\t\tbreak",
-            "\tdefault:",
-            "\t\tbreak",
-            "}"
-        ],
-        "description": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
-        "prefix": "swi"
-    },
-    "Symbol.asyncDispose": {
-        "body": [
-            "Symbol.asyncDispose"
-        ],
-        "description": "A well-known symbol used to define an async disposal method for an object.",
-        "prefix": "syad"
-    },
-    "Symbol.dispose": {
-        "body": [
-            "Symbol.dispose"
-        ],
-        "description": "A well-known symbol used to define a disposal method for an object.",
-        "prefix": "syd"
-    },
-    "throttle function": {
-        "body": [
-            "function throttle(fn, limit) {",
-            "  let inThrottle;",
-            "  return function(...args) {",
-            "    if (!inThrottle) {",
-            "      fn.apply(this, args);",
-            "      inThrottle = true;",
-            "      setTimeout(() => inThrottle = false, limit);",
-            "    }",
-            "  };",
-            "}"
-        ],
-        "description": "Creates a throttled function that only invokes fn at most once per every limit ms.",
-        "prefix": "thrf"
-    },
-    "WeakMap.prototype.deleteAll": {
-        "body": [
-            ".deleteAll($1)"
-        ],
-        "description": "The deleteAll() method removes all elements from a WeakMap instance.",
-        "prefix": ".de"
-    },
-    "WeakSet.prototype.addAll": {
-        "body": [
-            ".addAll($1)"
-        ],
-        "description": "The addAll() method adds all elements to a WeakSet instance.",
-        "prefix": ".ad"
-    },
-    "WeakSet.prototype.deleteAll": {
-        "body": [
-            ".deleteAll($1)"
-        ],
-        "description": "The deleteAll() method removes all elements from a WeakSet instance.",
-        "prefix": ".de"
-    },
-    "while": {
-        "body": [
-            "while ($1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true.",
-        "prefix": "whi"
-    },
-    "Window.alert": {
-        "body": [
-            "alert($1)"
-        ],
-        "description": "The Window.alert() method displays an alert dialog with the optional specified content and an OK button.",
-        "prefix": "ale"
-    },
-    "Window.confirm": {
-        "body": [
-            "confirm($1)"
-        ],
-        "description": "The Window.confirm() method displays a modal dialog with an optional message and two buttons: OK and Cancel.",
-        "prefix": "con"
-    },
-    "Window.prompt": {
-        "body": [
-            "prompt($1)"
-        ],
-        "description": "The Window.prompt() displays a dialog with an optional message prompting the user to input some text.",
-        "prefix": "pro"
-    },
-    "WindowOrWorkerGlobalScope.clearInterval": {
-        "body": [
-            "clearInterval($1)"
-        ],
-        "description": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval().",
-        "prefix": "cle"
-    },
-    "WindowOrWorkerGlobalScope.clearTime": {
-        "body": [
-            "clearTimeout($1)"
-        ],
-        "description": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout().",
-        "prefix": "cle"
-    },
-    "WindowOrWorkerGlobalScope.setInterval": {
-        "body": [
-            "setInterval($1, 700)"
-        ],
-        "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.",
-        "prefix": "set"
-    },
-    "WindowOrWorkerGlobalScope.setTimeout": {
-        "body": [
-            "setTimeout($1, 700)"
-        ],
-        "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires.",
-        "prefix": "set"
+        "description": "The Object.isSealed() determines if an object is sealed.",
+        "prefix": "objiss"
     }
 }
