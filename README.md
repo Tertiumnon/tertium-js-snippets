@@ -7,52 +7,49 @@ Collection of JavaScript snippets for your productivity.
 ## Declarations
 
 <!-- SNIPPETS_START -->
-- `.add` → `.add($1)`
-- `.add` → `.addEventListener($1, )`
+- `.ad` → `.add($1)`
+- `.adel` → `.addEventListener($1, )`
 - `.app` → `.apply($1)`
 - `.at` → `.at($1)`
 - `.bin` → `.bind($1)`
 - `.cal` → `.call($1)`
-- `.cla` → `.classList`
+- `.cll` → `.classList`
 - `.co` → `.concat($1)`
-- `.co` → `.copyWithin($1)`
-- `.con` → `.contains($1)`
+- `.co` → `.contains($1)`
+- `.cow` → `.copyWithin($1)`
 - `.cre` → `.createElement($1)`
-- `.dis` → `.dispatchEvent($1)`
+- `.die` → `.dispatchEvent($1)`
 - `.en` → `.entries($1)`
 - `.ev` → `.every($1)`
 - `.fi` → `.fill($1)`
 - `.fi` → `.filter($1)`
 - `.fi` → `.find($1)`
+- `.fii` → `.findIndex($1 => $1)`
 - `.fil` → `.findLast($1)`
+- `.fili` → `.findLastIndex($1)`
 - `.fl` → `.flat($1)`
-- `.fli` → `.findLastIndex($1)`
 - `.flm` → `.flatMap($1)`
-- `.fndx` → `.findIndex($1 => $1)`
-- `.fr` → `.from($1)`
-- `.frch` → `.forEach($1)`
+- `.foe` → `.forEach($1)`
 - `.gea` → `.getAttribute($1)`
-- `.gebc` → `.getElementsByClassName($1)`
-- `.gebi` → `.getElementById($1)`
-- `.gebt` → `.getElementsByTagName($1)`
+- `.geebcn` → `.getElementsByClassName($1)`
+- `.geebi` → `.getElementById($1)`
+- `.geebtn` → `.getElementsByTagName($1)`
 - `.in` → `.includes($1)`
 - `.ino` → `.indexOf($1)`
-- `.is` → `.isArray($1)`
 - `.jo` → `.join($1)`
 - `.ke` → `.keys($1)`
-- `.la` → `.lastIndexOf($1)`
+- `.laio` → `.lastIndexOf($1)`
 - `.ma` → `.map($1)`
-- `.of` → `.of($1)`
 - `.po` → `.pop()`
 - `.pro` → `.prototype`
 - `.pu` → `.push($1)`
+- `.re` → `.reduce($1)`
+- `.re` → `.remove($1)`
+- `.re` → `.replace($1, )`
+- `.re` → `.reverse()`
 - `.rea` → `.removeAttribute($1)`
-- `.red` → `.reduce($1)`
-- `.rel` → `.removeEventListener($1, )`
-- `.rem` → `.remove($1)`
-- `.rep` → `.replace($1, )`
+- `.reel` → `.removeEventListener($1, )`
 - `.rer` → `.reduceRight($1)`
-- `.rev` → `.reverse()`
 - `.sea` → `.setAttribute($1, )`
 - `.sh` → `.shift()`
 - `.sl` → `.slice()`
@@ -60,77 +57,77 @@ Collection of JavaScript snippets for your productivity.
 - `.so` → `.sort($1)`
 - `.sorf` → `(a, b) => { if ($1) { return -1 } if () { return 1 } return 0 }`
 - `.sorm` → `(a, b) => a - b`
-- `.spl` → `.splice($1)`
-- `.tog` → `.toggle($1)`
+- `.sp` → `.splice($1)`
+- `.to` → `.toggle($1)`
 - `.tols` → `.toLocaleString($1)`
 - `.tor` → `.toReversed()`
 - `.tos` → `.toSorted($1)`
+- `.tos` → `.toSpliced($1)`
 - `.tos` → `.toString($1)`
-- `.tosp` → `.toSpliced($1)`
-- `.uns` → `.unshift($1)`
-- `.val` → `.values($1)`
+- `.un` → `.unshift($1)`
+- `.va` → `.values($1)`
 - `.wi` → `.with($1, )`
-- `af` → `Array.from($1)`
-- `ai` → `Array.isArray($1)`
-- `ao` → `Array.of($1)`
-- `ar` → `Array`
-- `asu` → `$1.reduce((acc, cur) => acc + cur, 0)`
-- `blu` → `blur`
-- `cas` → `console.assert($1, '$2')`
-- `ccl` → `console.clear()`
-- `cco` → `console.count($1)`
-- `ccr` → `console.countReset($1)`
-- `cd` → `console.dir($1)`
-- `cde` → `console.debug($1)`
-- `cer` → `console.error($1)`
-- `cgc` → `console.groupCollapsed($1)`
-- `cge` → `console.groupEnd()`
-- `cgr` → `console.group($1)`
-- `cha` → `change`
-- `ci` → `console.info($1)`
-- `cla` → `class $1 { constructor($2) {} }`
-- `clg` → `console.log($1)`
-- `cli` → `click`
-- `clj` → `console.log(JSON.stringify($1, null, 2))`
+- `adelbl` → `.addEventListener($1, 'blur')`
+- `adelch` → `.addEventListener($1, 'change')`
+- `adelcl` → `.addEventListener($1, 'click')`
+- `adelfo` → `.addEventListener($1, 'focus')`
+- `adelfo` → `.addEventListener($1, 'focusout')`
+- `adelin` → `.addEventListener($1, 'input')`
+- `adelke` → `.addEventListener($1, 'keydown')`
+- `adelmo` → `.addEventListener($1, 'mouseout')`
+- `adelmo` → `.addEventListener($1, 'mouseover')`
+- `arrfr` → `Array.from($1)`
+- `arrisa` → `Array.isArray($1)`
+- `arrof` → `Array.of($1)`
+- `cl` → `class $1 { constructor($2) {} }`
 - `clo` → `const $2 = { ...$1 }`
-- `cta` → `console.table($1)`
-- `cte` → `console.timeEnd($1)`
-- `cti` → `console.time($1)`
-- `ctl` → `console.timeLog($1)`
-- `ctr` → `console.trace($1)`
-- `cwn` → `console.warn($1)`
+- `conas` → `console.assert($1, '$2')`
+- `concl` → `console.clear()`
+- `conco` → `console.count($1)`
+- `concor` → `console.countReset($1)`
+- `conde` → `console.debug($1)`
+- `condi` → `console.dir($1)`
+- `coner` → `console.error($1)`
+- `congr` → `console.group($1)`
+- `congrc` → `console.groupCollapsed($1)`
+- `congre` → `console.groupEnd()`
+- `conin` → `console.info($1)`
+- `conlo` → `console.log($1)`
+- `conta` → `console.table($1)`
+- `conti` → `console.time($1)`
+- `contie` → `console.timeEnd($1)`
+- `contil` → `console.timeLog($1)`
+- `contr` → `console.trace($1)`
+- `conwa` → `console.warn($1)`
 - `dcl` → `const $2 = JSON.parse(JSON.stringify($1))`
-- `deb` → `debugger`
+- `de` → `debugger`
+- `de` → `default`
 - `debfn` → `function debounce(fn, delay) { let timeoutId; return function(...args) { clearTimeout(timeoutId); timeoutId = setTimeout(() => fn.apply(this, args), delay); }; }`
-- `def` → `default`
 - `do` → `do { $1 } while ()`
 - `doc` → `document`
-- `exp` → `export`
+- `ex` → `export`
 - `fin` → `new FinalizationRegistry($1 => $1)`
 - `fnar` → `($1) => { }`
 - `fnarm` → `($1) => $1`
-- `foc` → `focus`
-- `foc` → `focusout`
 - `for` → `const $1Len = $1.length for (let i = 0; i < $1Len; i += 1) { const $1Item = $1[i] }`
 - `foraw` → `for await (let item of $1) { }`
 - `forin` → `for (const key in $1) { }`
 - `form` → `for (let j = 0; j < $1Len; j += 1) { const $1Item = $1[j] }`
 - `forof` → `for (const item of $1) { }`
 - `forr` → `for (let r = $1Len - 1; r >= 0; r -= 1) { const $1Item = $1[r] }`
+- `fu` → `function debounce(fn, delay) { let timeoutId; return function(...args) { clearTimeout(timeoutId); timeoutId = setTimeout(() => fn.apply(this, args), delay); }; }`
 - `fu` → `function() { $1 }`
 - `fun` → `function $1() { }`
 - `iea` → `Array.isArray($1) && $1.length === 0`
 - `ieo` → `Object.keys($1).length === 0`
 - `iife` → `(function() { $1 })()`
 - `imp` → `import from $1`
-- `inp` → `input`
 - `jsopa` → `JSON.parse($1)`
 - `jsost` → `JSON.stringify($1)`
-- `key` → `keydown`
-- `mou` → `mouseout`
-- `mou` → `mouseover`
+- `lajoapj` → `console.log(JSON.stringify($1, null, 2))`
 - `prore` → `Promise.resolve($1)`
 - `ran` → `Math.floor(Math.random() * ($2 - $1 + 1)) + $1`
 - `rda` → `[...new Set($1)]`
 - `saf` → `const $1 = ($2) => $3`
+- `saviaa` → `$1.reduce((acc, cur) => acc + cur, 0)`
 <!-- SNIPPETS_END -->
