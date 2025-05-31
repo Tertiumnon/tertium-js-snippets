@@ -6,163 +6,241 @@ Collection of JavaScript snippets for your productivity.
 
 ## Declarations
 
-```text
-.add -> .add($1);
-.add -> .addEventListener($1, );
-.app -> .appendChild($1);
-.app -> .apply($1)
-.ass -> .assign($1, )
-.bin -> .bind($1)
-.cal -> .call($1)
-.cat -> .catch($);
-.cla -> .classList
-.clo -> .cloneNode($1);
-.con -> .concat($1)
-.con -> .contains($1)
-.con -> .contains($1)
-.cop -> .copyWithin($1)
-.cre -> .create($1)
-.cre -> .createElement($1);
-.def -> .defineProperties($1, )
-.def -> .defineProperty($1, )
-.dis -> .dispatchEvent($1);
-.ent -> .entries($1)
-.ent -> .entries($1)
-.eve -> .every($1)
-.fil -> .fill($1)
-.fil -> .filter($1)
-.fin -> .find($1)
-.fin -> .findIndex($1 => $1)
-.for -> .forEach($1)
-.fre -> .freeze($1)
-.fro -> .from($1)
-.fro -> .fromEntries($1)
-.get -> .getAttribute($1)
-.get -> .getElementById($1)
-.get -> .getElementsByClassName($1)
-.get -> .getElementsByTagName($1)
-.has -> .hasAttribute($1)
-.inc -> .includes($1)
-.ind -> .indexOf($1)
-.inn -> .innerHTML
-.ins -> .insertBefore($1);
-.is -> .is($1, )
-.isa -> .isArray($1)
-.ise -> .isExtensible($1)
-.isf -> .isFrozen($1)
-.iss -> .isSealed($1)
-.joi -> .join($1)
-.key -> .keys($1)
-.key -> .keys($1)
-.las -> .lastIndexOf($1)
-.map -> .map($1)
-.out -> .outerHTML
-.par -> .parentElement
-.par -> .parentNode
-.pop -> .pop()
-.pre -> .preventExtensions($1)
-.pro -> .prototype
-.pus -> .push($1)
-.que -> .querySelector($1)
-.que -> .querySelectorAll($1)
-.red -> .reduce($1)
-.red -> .reduceRight($1)
-.rem -> .remove($1);
-.rem -> .removeAttribute($1);
-.rem -> .removeChild($1);
-.rem -> .removeEventListener($1, );
-.rep -> .replace($1, );
-.rep -> .replaceChild($1, );
-.rev -> .reverse()
-.sea -> .seal($1)
-.set -> .setAttribute($1, );
-.shi -> .shift()
-.sli -> .slice()
-.som -> .some($1)
-.sor -> .sort($1)
-.sorf -> (a, b) => { if ($1) { return -1; } if () { return 1; } return 0; }
-.sorm -> (a, b) => a - b
-.spl -> .splice($1)
-.tex -> .textContent
-.the -> .then($1 => $1)
-.tof -> .toFixed($1)
-.tog -> .toggle($1);
-.tol -> .toLocaleString($1)
-.tos -> .toString($1)
-.uns -> .unshift($1)
-.val -> .values($1)
-.val -> .values($1)
-ale -> alert($1);
-arr -> Array
-arr -> Array.from($1)
-arr -> Array.isArray($1)
-arr -> Array.of($1)
-blu -> blur
-cd -> console.dir($1);
-ce -> console.error($1);
-cha -> change
-ci -> console.info($1);
-cl -> console.log($1);
-cla -> class $1 { constructor(props) {} }
-cle -> clearInterval($1);
-cle -> clearTimeout($1);
-cli -> click
-con -> confirm($1);
-cw -> console.warn($1);
-deb -> debugger;
-def -> default
-do -> do { $1 } while ();
-doc -> document
-exp -> export
-fnar -> ($1) => { }
-fnaraf -> ($1, i, arr) => { }
-fnarm -> $1 => $1
-foc -> focus
-foc -> focusout
-for -> const $1Len = $1.length; for (let i = 0; i < $1Len; i += 1) { const $1Item = $1[i]; }
-foraw -> for await (let item of $1) { }
-forin -> for (const key in $1) { }
-form -> for (let j = 0; j < $1Len; j += 1) { const $1Item = $1[j]; }
-forof -> for (const item of $1) { }
-forr -> for (let r = $1Len - 1; r >= 0; r -= 1) { const $1Item = $1[r]; }
-fun -> function $1() { }
-fun -> function() { $1 }
-iife -> (function() { $1 })();
-imp -> import
-impm -> import from $1;
-imps -> import { } from $1;
-inp -> input
-json -> JSON.parse($1);
-json -> JSON.stringify($1);
-key -> keydown
-map -> new Map($1)
-mou -> mouseout
-mou -> mouseover
-obj -> Object
-obj -> Object.assign($1, )
-obj -> Object.create($1, )
-obj -> Object.defineProperties($1, )
-obj -> Object.defineProperty($1, )
-obj -> Object.entries($1)
-obj -> Object.freeze($1)
-obj -> Object.fromEntries($1)
-obj -> Object.is($1, )
-obj -> Object.isExtensible($1)
-obj -> Object.isFrozen($1)
-obj -> Object.isSealed($1)
-obj -> Object.keys($1)
-obj -> Object.preventExtensions($1)
-obj -> Object.seal($1)
-obj -> Object.values($1)
-of -> .of($1)
-par -> parseFloat($1)
-par -> parseInt($1)
-pro -> Promise.all($1)
-pro -> new Promise((resolve, reject) => { resolve($1); })
-pro -> prompt($1);
-set -> new Set($1)
-set -> setInterval($1, 700);
-set -> setTimeout($1, 700);
-swi -> switch ($1) { case : break; default: break; }
-whi -> while ($1) { }
-```
+<!-- SNIPPETS_START -->
+- `.ad` → `.addAll($1)`
+- `.add` → `.add($1)`
+- `.add` → `.addEventListener($1, )`
+- `.app` → `.appendChild($1)`
+- `.app` → `.apply($1)`
+- `.ass` → `.assign($1, )`
+- `.at` → `.at($1)`
+- `.at` → `.at($1)`
+- `.bin` → `.bind($1)`
+- `.cal` → `.call($1)`
+- `.cat` → `.catch($)`
+- `.cla` → `.classList`
+- `.clo` → `.cloneNode($1)`
+- `.co` → `.concat($1)`
+- `.co` → `.copyWithin($1)`
+- `.con` → `.contains($1)`
+- `.con` → `.contains($1)`
+- `.cre` → `.create($1)`
+- `.cre` → `.createElement($1)`
+- `.de` → `.deleteAll($1)`
+- `.de` → `.deleteAll($1)`
+- `.def` → `.defineProperties($1, )`
+- `.def` → `.defineProperty($1, )`
+- `.dis` → `.dispatchEvent($1)`
+- `.en` → `.entries($1)`
+- `.ent` → `.entries($1)`
+- `.ev` → `.every($1)`
+- `.fi` → `.fill($1)`
+- `.fi` → `.filter($1)`
+- `.fi` → `.find($1)`
+- `.fndx` → `.findIndex($1 => $1)`
+- `.fr` → `.from($1)`
+- `.frch` → `.forEach($1)`
+- `.frn` → `.fromEntries($1)`
+- `.get` → `.getAttribute($1)`
+- `.get` → `.getElementById($1)`
+- `.get` → `.getElementsByClassName($1)`
+- `.get` → `.getElementsByTagName($1)`
+- `.ha` → `.hasOwn($1)`
+- `.has` → `.hasAttribute($1)`
+- `.in` → `.includes($1)`
+- `.inn` → `.innerHTML`
+- `.ino` → `.indexOf($1)`
+- `.ins` → `.insertBefore($1)`
+- `.is` → `.is($1, )`
+- `.is` → `.isArray($1)`
+- `.ise` → `.isExtensible($1)`
+- `.isf` → `.isFrozen($1)`
+- `.iss` → `.isSealed($1)`
+- `.jo` → `.join($1)`
+- `.ke` → `.keys($1)`
+- `.key` → `.keys($1)`
+- `.la` → `.lastIndexOf($1)`
+- `.ma` → `.map($1)`
+- `.ma` → `.matchAll($1)`
+- `.of` → `.of($1)`
+- `.out` → `.outerHTML`
+- `.pa` → `.padEnd($1)`
+- `.pa` → `.padStart($1)`
+- `.par` → `.parentElement`
+- `.par` → `.parentNode`
+- `.po` → `.pop()`
+- `.pre` → `.preventExtensions($1)`
+- `.pro` → `.prototype`
+- `.pu` → `.push($1)`
+- `.que` → `.querySelector($1)`
+- `.que` → `.querySelectorAll($1)`
+- `.re` → `.reduce($1)`
+- `.re` → `.reduceRight($1)`
+- `.re` → `.replaceAll($1, )`
+- `.re` → `.reverse()`
+- `.rem` → `.remove($1)`
+- `.rem` → `.removeAttribute($1)`
+- `.rem` → `.removeChild($1)`
+- `.rem` → `.removeEventListener($1, )`
+- `.rep` → `.replace($1, )`
+- `.rep` → `.replaceChild($1, )`
+- `.sea` → `.seal($1)`
+- `.set` → `.setAttribute($1, )`
+- `.sh` → `.shift()`
+- `.sl` → `.slice()`
+- `.so` → `.some($1)`
+- `.so` → `.sort($1)`
+- `.sorf` → `(a, b) => { if ($1) { return -1 } if () { return 1 } return 0 }`
+- `.sorm` → `(a, b) => a - b`
+- `.spl` → `.splice($1)`
+- `.tex` → `.textContent`
+- `.the` → `.then($1 => $1)`
+- `.tof` → `.toFixed($1)`
+- `.tog` → `.toggle($1)`
+- `.tols` → `.toLocaleString($1)`
+- `.tor` → `.toReversed()`
+- `.tos` → `.toSorted($1)`
+- `.tos` → `.toString($1)`
+- `.tosp` → `.toSpliced($1)`
+- `.tr` → `.trimEnd()`
+- `.tr` → `.trimStart()`
+- `.uns` → `.unshift($1)`
+- `.val` → `.values($1)`
+- `.val` → `.values($1)`
+- `.wi` → `.with($1, )`
+- `af` → `Array.from($1)`
+- `ai` → `Array.isArray($1)`
+- `ale` → `alert($1)`
+- `ao` → `Array.of($1)`
+- `ar` → `Array`
+- `asu` → `$1.reduce((acc, cur) => acc + cur, 0)`
+- `blu` → `blur`
+- `cas` → `console.assert($1, '$2')`
+- `ccl` → `console.clear()`
+- `cco` → `console.count($1)`
+- `ccr` → `console.countReset($1)`
+- `cd` → `console.dir($1)`
+- `cde` → `console.debug($1)`
+- `cer` → `console.error($1)`
+- `cgc` → `console.groupCollapsed($1)`
+- `cge` → `console.groupEnd()`
+- `cgr` → `console.group($1)`
+- `cha` → `change`
+- `ci` → `console.info($1)`
+- `cla` → `class $1 { constructor(props) {} }`
+- `cle` → `clearInterval($1)`
+- `cle` → `clearTimeout($1)`
+- `clg` → `console.log($1)`
+- `cli` → `click`
+- `clj` → `console.log(JSON.stringify($1, null, 2))`
+- `clo` → `const $2 = { ...$1 }`
+- `con` → `confirm($1)`
+- `cta` → `console.table($1)`
+- `cte` → `console.timeEnd($1)`
+- `cti` → `console.time($1)`
+- `ctl` → `console.timeLog($1)`
+- `ctr` → `console.trace($1)`
+- `cwn` → `console.warn($1)`
+- `dcl` → `const $2 = JSON.parse(JSON.stringify($1))`
+- `deb` → `debugger`
+- `debfn` → `function debounce(fn, delay) { let timeoutId; return function(...args) { clearTimeout(timeoutId); timeoutId = setTimeout(() => fn.apply(this, args), delay); }; }`
+- `def` → `default`
+- `do` → `do { $1 } while ()`
+- `doc` → `document`
+- `exp` → `export`
+- `fnar` → `($1) => { }`
+- `fnarm` → `($1) => $1`
+- `foc` → `focus`
+- `foc` → `focusout`
+- `for` → `const $1Len = $1.length for (let i = 0; i < $1Len; i += 1) { const $1Item = $1[i] }`
+- `foraw` → `for await (let item of $1) { }`
+- `forin` → `for (const key in $1) { }`
+- `form` → `for (let j = 0; j < $1Len; j += 1) { const $1Item = $1[j] }`
+- `forof` → `for (const item of $1) { }`
+- `forr` → `for (let r = $1Len - 1; r >= 0; r -= 1) { const $1Item = $1[r] }`
+- `fu` → `function() { $1 }`
+- `fun` → `function $1() { }`
+- `iea` → `Array.isArray($1) && $1.length === 0`
+- `ieo` → `Object.keys($1).length === 0`
+- `iife` → `(function() { $1 })()`
+- `imp` → `import from $1`
+- `inp` → `input`
+- `json` → `JSON.parse($1)`
+- `json` → `JSON.stringify($1)`
+- `key` → `keydown`
+- `map` → `new Map($1)`
+- `mea` → `[...$1, ...$2]`
+- `mou` → `mouseout`
+- `mou` → `mouseover`
+- `obj` → `Object.assign($1, )`
+- `obj` → `Object.create($1, )`
+- `obj` → `Object.defineProperties($1, )`
+- `obj` → `Object.defineProperty($1, )`
+- `obj` → `Object.is($1, )`
+- `obj` → `Object.isExtensible($1)`
+- `obj` → `Object.isFrozen($1)`
+- `obj` → `Object.isSealed($1)`
+- `obj` → `Object.keys($1)`
+- `obj` → `Object.preventExtensions($1)`
+- `obj` → `Object.seal($1)`
+- `obj` → `Object.values($1)`
+- `obj` → `Object`
+- `objent` → `Object.entries($1)`
+- `objfrn` → `Object.fromEntries($1)`
+- `objfrz` → `Object.freeze($1)`
+- `par` → `parseFloat($1)`
+- `par` → `parseInt($1)`
+- `prmres` → `Promise.resolve($1)`
+- `prmrjt` → `Promise.reject($1)`
+- `pro` → `Promise.all($1)`
+- `pro` → `new Promise((resolve, reject) => { resolve($1) })`
+- `pro` → `prompt($1)`
+- `proa` → `Promise.any($1)`
+- `pror` → `Promise.race($1)`
+- `pros` → `Promise.allSettled($1)`
+- `ran` → `Math.floor(Math.random() * ($2 - $1 + 1)) + $1`
+- `rda` → `[...new Set($1)]`
+- `saf` → `const $1 = ($2) => $3`
+- `set` → `new Set($1)`
+- `set` → `setInterval($1, 700)`
+- `set` → `setTimeout($1, 700)`
+- `swi` → `switch ($1) { case : break default: break }`
+- `syad` → `Symbol.asyncDispose`
+- `syd` → `Symbol.dispose`
+- `thrf` → `function throttle(fn, limit) { let inThrottle; return function(...args) { if (!inThrottle) { fn.apply(this, args); inThrottle = true; setTimeout(() => inThrottle = false, limit); } }; }`
+- `whi` → `while ($1) { }`
+<!-- SNIPPETS_END -->
+
+## Mnemonic (Prefix) Generation Rule
+
+If the snippet is a method call (starts with a dot in body):
+
+Prefix: . + first two letters of the method name (after the dot, in camelCase or PascalCase, use only letters).
+For each additional camelCase/PascalCase word in the method name, add its first letter.
+Example:
+.findIndex($1) → .fi (find) + i (Index) → .fii
+.fromEntries($1) → .fr (from) + e (Entries) → .fre
+.isArray($1) → .is (is) + a (Array) → .isa
+.toLocaleString($1) → .to (to) + l (Locale) + s (String) → .tols
+If the snippet is a global or static method (e.g., Object.freeze($1)):
+
+Prefix: first three letters of the object/class name (lowercase) + first three letters of the method name (lowercase).
+Example:
+Object.freeze($1) → objfrz
+Object.fromEntries($1) → objfro
+Promise.resolve($1) → pror
+Array.from($1) → arrfro
+If the snippet is a keyword or language construct:
+
+Prefix: first three letters of the keyword.
+Example:
+function → fun
+class → cla
+switch → swi
+If the snippet is a utility or common pattern:
+
+Prefix: first letter of each word in the description or name, up to 3–4 letters, or a well-known abbreviation.
+Example:
+"remove duplicates array" → rda
+"deep clone object" → dco or dcl
+"random integer" → ran

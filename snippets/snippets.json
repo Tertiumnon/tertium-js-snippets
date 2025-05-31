@@ -125,14 +125,14 @@
             ".findIndex($1 => $1)"
         ],
         "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.",
-        "prefix": ".fii"
+        "prefix": ".fndx"
     },
     "Array.prototype.forEach": {
         "body": [
             ".forEach($1)"
         ],
         "description": "The forEach() method executes a provided function once for each array element.",
-        "prefix": ".foe"
+        "prefix": ".frch"
     },
     "Array.prototype.includes": {
         "body": [
@@ -273,7 +273,7 @@
             ".toLocaleString($1)"
         ],
         "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”).",
-        "prefix": ".tol"
+        "prefix": ".tols"
     },
     "Array.prototype.toReversed": {
         "body": [
@@ -387,7 +387,7 @@
             "console.error($1)"
         ],
         "description": "Outputs an error message to the Web Console.",
-        "prefix": "ce"
+        "prefix": "cer"
     },
     "console.group": {
         "body": [
@@ -422,7 +422,7 @@
             "console.log($1)"
         ],
         "description": "Outputs a message to the Web Console.",
-        "prefix": "cl"
+        "prefix": "clg"
     },
     "console.log JSON": {
         "body": [
@@ -471,7 +471,7 @@
             "console.warn($1)"
         ],
         "description": "Outputs a warning message to the Web Console.",
-        "prefix": "cw"
+        "prefix": "cwn"
     },
     "debounce function": {
         "body": [
@@ -1073,43 +1073,36 @@
         "body": [
             ".entries($1)"
         ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
+        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.",
         "prefix": ".ent"
     },
     "Object.entries(obj) ": {
         "body": [
             "Object.entries($1)"
         ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
-        "prefix": "obj"
+        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.",
+        "prefix": "objent"
     },
     "Object.freeze(obj)": {
         "body": [
-            ".freeze($1)"
-        ],
-        "description": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
-        "prefix": ".fre"
-    },
-    "Object.freeze(obj) ": {
-        "body": [
             "Object.freeze($1)"
         ],
-        "description": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
-        "prefix": "obj"
+        "description": "The Object.freeze() method freezes an object.",
+        "prefix": "objfrz"
     },
     "Object.fromEntries(iterable)": {
         "body": [
             ".fromEntries($1)"
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": ".fro"
+        "prefix": ".frn"
     },
     "Object.fromEntries(iterable) ": {
         "body": [
             "Object.fromEntries($1)"
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": "obj"
+        "prefix": "objfrn"
     },
     "Object.hasOwn": {
         "body": [
@@ -1277,14 +1270,14 @@
             "Promise.reject($1)"
         ],
         "description": "The Promise.reject() method returns a Promise object that is rejected with a given reason.",
-        "prefix": "pror"
+        "prefix": "prmrjt"
     },
     "Promise.resolve": {
         "body": [
             "Promise.resolve($1)"
         ],
         "description": "The Promise.resolve() method returns a Promise object that is resolved with a given value.",
-        "prefix": "pror"
+        "prefix": "prmres"
     },
     "random integer": {
         "body": [
