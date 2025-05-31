@@ -197,7 +197,12 @@ To ensure all snippet prefixes are unique, memorable, and consistent, follow the
   - "random integer" → `ran`
   - "short arrow function" → `saf`
 
-### 5. If a collision occurs
+### 5. Special Rule for DOM Methods with Similar Names
+For DOM methods that start with common verbs (like get, set, remove),
+the prefix should be:
+. + first two letters of the verb + first letter of each subsequent word in the method name.
+
+### 6. If a collision occurs
 - Add more letters from the method or object name until the prefix is unique.
 
 ---

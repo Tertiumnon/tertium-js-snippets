@@ -600,68 +600,47 @@
         "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true.",
         "prefix": ".tog"
     },
-    "Element.getAttribute": {
-        "body": [
-            ".getAttribute($1)"
-        ],
-        "description": "The getAttribute() method of the Element interface returns the value of a specified attribute on the element.",
-        "prefix": ".get"
-    },
     "Element.getElementById": {
         "body": [
             ".getElementById($1)"
         ],
-        "description": "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string.",
-        "prefix": ".get"
+        "description": "Returns the element that has the ID attribute with the specified value.",
+        "prefix": ".gebi"
     },
     "Element.getElementsByClassName": {
         "body": [
             ".getElementsByClassName($1)"
         ],
-        "description": "The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names.",
-        "prefix": ".get"
+        "description": "Returns a live HTMLCollection of elements with the given class name.",
+        "prefix": ".gebc"
     },
     "Element.getElementsByTagName": {
         "body": [
             ".getElementsByTagName($1)"
         ],
-        "description": "The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name.",
-        "prefix": ".get"
+        "description": "Returns a live HTMLCollection of elements with the given tag name.",
+        "prefix": ".gebt"
     },
-    "Element.hasAttribute": {
+    "Element.getAttribute": {
         "body": [
-            ".hasAttribute($1)"
+            ".getAttribute($1)"
         ],
-        "description": "The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not.",
-        "prefix": ".has"
-    },
-    "Element.querySelector": {
-        "body": [
-            ".querySelector($1)"
-        ],
-        "description": "The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.",
-        "prefix": ".que"
-    },
-    "Element.querySelectorAll": {
-        "body": [
-            ".querySelectorAll($1)"
-        ],
-        "description": "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.",
-        "prefix": ".que"
-    },
-    "Element.removeAttribute": {
-        "body": [
-            ".removeAttribute($1)"
-        ],
-        "description": "The Element method removeAttribute() removes the attribute with the specified name from the element.",
-        "prefix": ".rem"
+        "description": "Returns the value of a specified attribute on the element.",
+        "prefix": ".gea"
     },
     "Element.setAttribute": {
         "body": [
             ".setAttribute($1, )"
         ],
-        "description": "Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.",
-        "prefix": ".set"
+        "description": "Sets the value of an attribute on the specified element.",
+        "prefix": ".sea"
+    },
+    "Element.removeAttribute": {
+        "body": [
+            ".removeAttribute($1)"
+        ],
+        "description": "Removes the attribute with the specified name from the element.",
+        "prefix": ".rea"
     },
     "EventTarget.addEventListener": {
         "body": [
