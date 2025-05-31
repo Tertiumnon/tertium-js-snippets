@@ -34,12 +34,11 @@ Collection of JavaScript snippets for your productivity.
 - `.fr` → `.from($1)`
 - `.frch` → `.forEach($1)`
 - `.fre` → `.fromEntries($1)`
-- `.get` → `.getAttribute($1)`
-- `.get` → `.getElementById($1)`
-- `.get` → `.getElementsByClassName($1)`
-- `.get` → `.getElementsByTagName($1)`
+- `.gea` → `.getAttribute($1)`
+- `.gebc` → `.getElementsByClassName($1)`
+- `.gebi` → `.getElementById($1)`
+- `.gebt` → `.getElementsByTagName($1)`
 - `.hao` → `.hasOwn($1)`
-- `.has` → `.hasAttribute($1)`
 - `.in` → `.includes($1)`
 - `.ino` → `.indexOf($1)`
 - `.is` → `.isArray($1)`
@@ -56,17 +55,15 @@ Collection of JavaScript snippets for your productivity.
 - `.po` → `.pop()`
 - `.pro` → `.prototype`
 - `.pu` → `.push($1)`
-- `.que` → `.querySelector($1)`
-- `.que` → `.querySelectorAll($1)`
 - `.re` → `.reduce($1)`
 - `.re` → `.reduceRight($1)`
 - `.re` → `.reverse()`
+- `.rea` → `.removeAttribute($1)`
 - `.rea` → `.replaceAll($1, )`
 - `.rem` → `.remove($1)`
-- `.rem` → `.removeAttribute($1)`
 - `.rem` → `.removeEventListener($1, )`
 - `.rep` → `.replace($1, )`
-- `.set` → `.setAttribute($1, )`
+- `.sea` → `.setAttribute($1, )`
 - `.sh` → `.shift()`
 - `.sl` → `.slice()`
 - `.so` → `.some($1)`
