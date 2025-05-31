@@ -124,7 +124,7 @@ Collection of JavaScript snippets for your productivity.
 - `imp` → `import from $1`
 - `jsopa` → `JSON.parse($1)`
 - `jsost` → `JSON.stringify($1)`
-- `lajoapj` → `console.log(JSON.stringify($1, null, 2))`
+- `pretjson` → `JSON.stringify($1, null, 2)`
 - `prore` → `Promise.resolve($1)`
 - `ran` → `Math.floor(Math.random() * ($2 - $1 + 1)) + $1`
 - `rda` → `[...new Set($1)]`
