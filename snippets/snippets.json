@@ -219,25 +219,19 @@
         "prefix": ".pu"
     },
     "Array.prototype.reduce": {
-        "body": [
-            ".reduce($1)"
-        ],
-        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.",
-        "prefix": ".re"
+        "body": [".reduce($1)"],
+        "description": "The reduce() method executes a reducer function on each element of the array.",
+        "prefix": ".red"
     },
     "Array.prototype.reduceRight": {
-        "body": [
-            ".reduceRight($1)"
-        ],
-        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.",
-        "prefix": ".re"
+        "body": [".reduceRight($1)"],
+        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left).",
+        "prefix": ".rer"
     },
     "Array.prototype.reverse": {
-        "body": [
-            ".reverse()"
-        ],
-        "description": "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.",
-        "prefix": ".re"
+        "body": [".reverse()"],
+        "description": "The reverse() method reverses an array in place.",
+        "prefix": ".rev"
     },
     "Array.prototype.shift": {
         "body": [
@@ -636,9 +630,7 @@
         "prefix": ".sea"
     },
     "Element.removeAttribute": {
-        "body": [
-            ".removeAttribute($1)"
-        ],
+        "body": [".removeAttribute($1)"],
         "description": "Removes the attribute with the specified name from the element.",
         "prefix": ".rea"
     },
@@ -720,11 +712,9 @@
         "prefix": ".dis"
     },
     "EventTarget.removeEventListener": {
-        "body": [
-            ".removeEventListener($1, )"
-        ],
-        "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener().",
-        "prefix": ".rem"
+        "body": [".removeEventListener($1, )"],
+        "description": "Removes an event listener from the element.",
+        "prefix": ".rel"
     },
     "export": {
         "body": [
@@ -879,171 +869,38 @@
         "prefix": "ieo"
     },
     "JSON.parse": {
-        "body": [
-            "JSON.parse($1)"
-        ],
+        "body": ["JSON.parse($1)"],
         "description": "Parses a JSON string.",
-        "prefix": "jsonpar"
+        "prefix": "jsopa"
     },
     "JSON.stringify": {
-        "body": [
-            "JSON.stringify($1)"
-        ],
+        "body": ["JSON.stringify($1)"],
         "description": "Converts a value to a JSON string.",
-        "prefix": "jsonstr"
+        "prefix": "jsost"
     },
-    "nullish coalescing": {
-        "body": [
-            "$1 ?? $2"
-        ],
-        "description": "Returns the right-hand operand when the left-hand operand is null or undefined.",
-        "prefix": "nulc"
+    "Promise.resolve": {
+        "body": ["Promise.resolve($1)"],
+        "description": "Returns a Promise object that is resolved with a given value.",
+        "prefix": "prore"
     },
-    "Object.entries(obj)": {
-        "body": [
-            ".entries($1)"
-        ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.",
-        "prefix": ".ent"
+    "remove duplicates array": {
+        "body": ["[...new Set($1)]"],
+        "description": "Removes duplicate values from an array.",
+        "prefix": "rda"
     },
-    "Object.entries(obj) ": {
-        "body": [
-            "Object.entries($1)"
-        ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.",
-        "prefix": "objent"
+    "deep clone object": {
+        "body": ["const $2 = JSON.parse(JSON.stringify($1))"],
+        "description": "Deep clones an object using JSON methods.",
+        "prefix": "dcl"
     },
-    "Object.freeze(obj)": {
-        "body": [
-            "Object.freeze($1)"
-        ],
-        "description": "The Object.freeze() method freezes an object.",
-        "prefix": "objfrz"
+    "random integer": {
+        "body": ["Math.floor(Math.random() * ($2 - $1 + 1)) + $1"],
+        "description": "Generates a random integer between two values, inclusive.",
+        "prefix": "ran"
     },
-    "Object.fromEntries(iterable)": {
-        "body": [
-            ".fromEntries($1)"
-        ],
-        "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": ".fre"
-    },
-    "Object.fromEntries(iterable) ": {
-        "body": [
-            "Object.fromEntries($1)"
-        ],
-        "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": "objfre"
-    },
-    "Object.hasOwn": {
-        "body": [
-            ".hasOwn($1)"
-        ],
-        "description": "Returns true if the specified object has the indicated property as its own property.",
-        "prefix": ".hao"
-    },
-    "Object.is": {
-        "body": [
-            ".is($1, )"
-        ],
-        "description": "The Object.is() method determines whether two values are the same value.",
-        "prefix": ".isv"
-    },
-    "Object.is(value1, value2)": {
-        "body": [
-            "Object.is($1, )"
-        ],
-        "description": "The Object.is() method determines whether two values are the same value.",
-        "prefix": "objisv"
-    },
-    "Object.isExtensible": {
-        "body": [
-            ".isExtensible($1)"
-        ],
-        "description": "The Object.isExtensible() method determines if an object is extensible.",
-        "prefix": ".ise"
-    },
-    "Object.isExtensible(obj)": {
-        "body": [
-            "Object.isExtensible($1)"
-        ],
-        "description": "The Object.isExtensible() method determines if an object is extensible.",
-        "prefix": "objise"
-    },
-    "Object.isFrozen": {
-        "body": [
-            ".isFrozen($1)"
-        ],
-        "description": "The Object.isFrozen() determines if an object is frozen.",
-        "prefix": ".isf"
-    },
-    "Object.isFrozen(obj)": {
-        "body": [
-            "Object.isFrozen($1)"
-        ],
-        "description": "The Object.isFrozen() determines if an object is frozen.",
-        "prefix": "objisf"
-    },
-    "Object.isSealed": {
-        "body": [
-            ".isSealed($1)"
-        ],
-        "description": "The Object.isSealed() determines if an object is sealed.",
-        "prefix": ".iss"
-    },
-    "Object.isSealed(obj)": {
-        "body": [
-            "Object.isSealed($1)"
-        ],
-        "description": "The Object.isSealed() determines if an object is sealed.",
-        "prefix": "objiss"
-    },
-    "optional chaining": {
-        "body": [
-            "$1?.$2"
-        ],
-        "description": "Accesses the value of a property deep within a chain of connected objects without having to explicitly validate that each reference in the chain is valid.",
-        "prefix": "opc"
-    },
-    "Promise.allSettled": {
-        "body": [
-            "Promise.allSettled($1)"
-        ],
-        "description": "Returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
-        "prefix": "prmals"
-    },
-    "Promise.any": {
-        "body": [
-            "Promise.any($1)"
-        ],
-        "description": "Returns a promise that fulfills as soon as any of the promises fulfills.",
-        "prefix": "prmany"
-    },
-    "Promise.catch": {
-        "body": [
-            ".catch($1)"
-        ],
-        "description": "Appends a rejection handler callback to the promise.",
-        "prefix": ".cat"
-    },
-    "String.prototype.matchAll": {
-        "body": [
-            ".matchAll($1)"
-        ],
-        "description": "Returns an iterator of all results matching a string against a regular expression.",
-        "prefix": ".ma"
-    },
-    "String.prototype.replaceAll": {
-        "body": [
-            ".replaceAll($1, )"
-        ],
-        "description": "Returns a new string with all matches of a pattern replaced by a replacement.",
-        "prefix": ".rea"
-    },
-    "WeakRef": {
-        "body": [
-            "new WeakRef($1)"
-        ],
-        "description": "Lets you hold a weak reference to another object, without preventing that object from getting garbage-collected.",
-        "prefix": "wea"
+    "short arrow function": {
+        "body": ["const $1 = ($2) => $3"],
+        "description": "Creates a concise arrow function.",
+        "prefix": "saf"
     }
 }
