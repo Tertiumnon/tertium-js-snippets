@@ -7,29 +7,17 @@ Collection of JavaScript snippets for your productivity.
 ## Declarations
 
 <!-- SNIPPETS_START -->
-- `.ad` → `.addAll($1)`
 - `.add` → `.add($1)`
 - `.add` → `.addEventListener($1, )`
-- `.app` → `.appendChild($1)`
 - `.app` → `.apply($1)`
-- `.ass` → `.assign($1, )`
-- `.at` → `.at($1)`
 - `.at` → `.at($1)`
 - `.bin` → `.bind($1)`
 - `.cal` → `.call($1)`
-- `.cat` → `.catch($)`
 - `.cla` → `.classList`
-- `.clo` → `.cloneNode($1)`
 - `.co` → `.concat($1)`
 - `.co` → `.copyWithin($1)`
 - `.con` → `.contains($1)`
-- `.con` → `.contains($1)`
-- `.cre` → `.create($1)`
 - `.cre` → `.createElement($1)`
-- `.de` → `.deleteAll($1)`
-- `.de` → `.deleteAll($1)`
-- `.def` → `.defineProperties($1, )`
-- `.def` → `.defineProperty($1, )`
 - `.dis` → `.dispatchEvent($1)`
 - `.en` → `.entries($1)`
 - `.ent` → `.entries($1)`
@@ -40,51 +28,36 @@ Collection of JavaScript snippets for your productivity.
 - `.fndx` → `.findIndex($1 => $1)`
 - `.fr` → `.from($1)`
 - `.frch` → `.forEach($1)`
-- `.frn` → `.fromEntries($1)`
+- `.fre` → `.fromEntries($1)`
 - `.get` → `.getAttribute($1)`
 - `.get` → `.getElementById($1)`
 - `.get` → `.getElementsByClassName($1)`
 - `.get` → `.getElementsByTagName($1)`
-- `.ha` → `.hasOwn($1)`
 - `.has` → `.hasAttribute($1)`
 - `.in` → `.includes($1)`
-- `.inn` → `.innerHTML`
 - `.ino` → `.indexOf($1)`
-- `.ins` → `.insertBefore($1)`
-- `.is` → `.is($1, )`
 - `.is` → `.isArray($1)`
 - `.ise` → `.isExtensible($1)`
 - `.isf` → `.isFrozen($1)`
 - `.iss` → `.isSealed($1)`
+- `.isv` → `.is($1, )`
 - `.jo` → `.join($1)`
 - `.ke` → `.keys($1)`
-- `.key` → `.keys($1)`
 - `.la` → `.lastIndexOf($1)`
 - `.ma` → `.map($1)`
-- `.ma` → `.matchAll($1)`
 - `.of` → `.of($1)`
-- `.out` → `.outerHTML`
-- `.pa` → `.padEnd($1)`
-- `.pa` → `.padStart($1)`
-- `.par` → `.parentElement`
-- `.par` → `.parentNode`
 - `.po` → `.pop()`
-- `.pre` → `.preventExtensions($1)`
 - `.pro` → `.prototype`
 - `.pu` → `.push($1)`
 - `.que` → `.querySelector($1)`
 - `.que` → `.querySelectorAll($1)`
 - `.re` → `.reduce($1)`
 - `.re` → `.reduceRight($1)`
-- `.re` → `.replaceAll($1, )`
 - `.re` → `.reverse()`
 - `.rem` → `.remove($1)`
 - `.rem` → `.removeAttribute($1)`
-- `.rem` → `.removeChild($1)`
 - `.rem` → `.removeEventListener($1, )`
 - `.rep` → `.replace($1, )`
-- `.rep` → `.replaceChild($1, )`
-- `.sea` → `.seal($1)`
 - `.set` → `.setAttribute($1, )`
 - `.sh` → `.shift()`
 - `.sl` → `.slice()`
@@ -93,24 +66,17 @@ Collection of JavaScript snippets for your productivity.
 - `.sorf` → `(a, b) => { if ($1) { return -1 } if () { return 1 } return 0 }`
 - `.sorm` → `(a, b) => a - b`
 - `.spl` → `.splice($1)`
-- `.tex` → `.textContent`
-- `.the` → `.then($1 => $1)`
-- `.tof` → `.toFixed($1)`
 - `.tog` → `.toggle($1)`
 - `.tols` → `.toLocaleString($1)`
 - `.tor` → `.toReversed()`
 - `.tos` → `.toSorted($1)`
 - `.tos` → `.toString($1)`
 - `.tosp` → `.toSpliced($1)`
-- `.tr` → `.trimEnd()`
-- `.tr` → `.trimStart()`
 - `.uns` → `.unshift($1)`
-- `.val` → `.values($1)`
 - `.val` → `.values($1)`
 - `.wi` → `.with($1, )`
 - `af` → `Array.from($1)`
 - `ai` → `Array.isArray($1)`
-- `ale` → `alert($1)`
 - `ao` → `Array.of($1)`
 - `ar` → `Array`
 - `asu` → `$1.reduce((acc, cur) => acc + cur, 0)`
@@ -128,13 +94,10 @@ Collection of JavaScript snippets for your productivity.
 - `cha` → `change`
 - `ci` → `console.info($1)`
 - `cla` → `class $1 { constructor(props) {} }`
-- `cle` → `clearInterval($1)`
-- `cle` → `clearTimeout($1)`
 - `clg` → `console.log($1)`
 - `cli` → `click`
 - `clj` → `console.log(JSON.stringify($1, null, 2))`
 - `clo` → `const $2 = { ...$1 }`
-- `con` → `confirm($1)`
 - `cta` → `console.table($1)`
 - `cte` → `console.timeEnd($1)`
 - `cti` → `console.time($1)`
@@ -165,50 +128,18 @@ Collection of JavaScript snippets for your productivity.
 - `iife` → `(function() { $1 })()`
 - `imp` → `import from $1`
 - `inp` → `input`
-- `json` → `JSON.parse($1)`
-- `json` → `JSON.stringify($1)`
+- `jsonpar` → `JSON.parse($1)`
+- `jsonstr` → `JSON.stringify($1)`
 - `key` → `keydown`
-- `map` → `new Map($1)`
-- `mea` → `[...$1, ...$2]`
 - `mou` → `mouseout`
 - `mou` → `mouseover`
-- `obj` → `Object.assign($1, )`
-- `obj` → `Object.create($1, )`
-- `obj` → `Object.defineProperties($1, )`
-- `obj` → `Object.defineProperty($1, )`
-- `obj` → `Object.is($1, )`
-- `obj` → `Object.isExtensible($1)`
-- `obj` → `Object.isFrozen($1)`
-- `obj` → `Object.isSealed($1)`
-- `obj` → `Object.keys($1)`
-- `obj` → `Object.preventExtensions($1)`
-- `obj` → `Object.seal($1)`
-- `obj` → `Object.values($1)`
-- `obj` → `Object`
 - `objent` → `Object.entries($1)`
-- `objfrn` → `Object.fromEntries($1)`
+- `objfre` → `Object.fromEntries($1)`
 - `objfrz` → `Object.freeze($1)`
-- `par` → `parseFloat($1)`
-- `par` → `parseInt($1)`
-- `prmres` → `Promise.resolve($1)`
-- `prmrjt` → `Promise.reject($1)`
-- `pro` → `Promise.all($1)`
-- `pro` → `new Promise((resolve, reject) => { resolve($1) })`
-- `pro` → `prompt($1)`
-- `proa` → `Promise.any($1)`
-- `pror` → `Promise.race($1)`
-- `pros` → `Promise.allSettled($1)`
-- `ran` → `Math.floor(Math.random() * ($2 - $1 + 1)) + $1`
-- `rda` → `[...new Set($1)]`
-- `saf` → `const $1 = ($2) => $3`
-- `set` → `new Set($1)`
-- `set` → `setInterval($1, 700)`
-- `set` → `setTimeout($1, 700)`
-- `swi` → `switch ($1) { case : break default: break }`
-- `syad` → `Symbol.asyncDispose`
-- `syd` → `Symbol.dispose`
-- `thrf` → `function throttle(fn, limit) { let inThrottle; return function(...args) { if (!inThrottle) { fn.apply(this, args); inThrottle = true; setTimeout(() => inThrottle = false, limit); } }; }`
-- `whi` → `while ($1) { }`
+- `objise` → `Object.isExtensible($1)`
+- `objisf` → `Object.isFrozen($1)`
+- `objiss` → `Object.isSealed($1)`
+- `objisv` → `Object.is($1, )`
 <!-- SNIPPETS_END -->
 
 ## Snippet Mnemonic (Prefix) Generation Rules
