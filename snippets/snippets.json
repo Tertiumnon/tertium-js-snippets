@@ -758,12 +758,12 @@
         "description": "Clones an object using the spread operator.",
         "prefix": "clo"
     },
-    "Pattern.consoleLogJson": {
+    "Pattern.prettifyJson": {
         "body": [
-            "console.log(JSON.stringify($1, null, 2))"
+            "JSON.stringify($1, null, 2)"
         ],
         "description": "Logs a JavaScript object as pretty-printed JSON.",
-        "prefix": "lajoapj"
+        "prefix": "pretjson"
     },
     "Pattern.debounceFunction": {
         "body": [
