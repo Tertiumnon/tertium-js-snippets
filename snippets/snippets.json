@@ -127,6 +127,34 @@
         "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.",
         "prefix": ".fndx"
     },
+    "Array.prototype.findLast": {
+        "body": [
+            ".findLast($1)"
+        ],
+        "description": "Returns the value of the last element in the array that satisfies the provided testing function.",
+        "prefix": ".fil"
+    },
+    "Array.prototype.findLastIndex": {
+        "body": [
+            ".findLastIndex($1)"
+        ],
+        "description": "Returns the index of the last element in the array that satisfies the provided testing function.",
+        "prefix": ".fli"
+    },
+    "Array.prototype.flat": {
+        "body": [
+            ".flat($1)"
+        ],
+        "description": "Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.",
+        "prefix": ".fl"
+    },
+    "Array.prototype.flatMap": {
+        "body": [
+            ".flatMap($1)"
+        ],
+        "description": "Maps each element using a mapping function, then flattens the result into a new array.",
+        "prefix": ".flm"
+    },
     "Array.prototype.forEach": {
         "body": [
             ".forEach($1)"
@@ -327,7 +355,7 @@
     "class": {
         "body": [
             "class $1 {",
-            "\tconstructor(props) {}",
+            "\tconstructor($2) {}",
             "}"
         ],
         "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
@@ -726,6 +754,13 @@
         "description": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. The value of an imported binding is subject to change in the module that exports it. When a module updates the value of a binding that it exports, the update will be visible in its imported value.",
         "prefix": "exp"
     },
+    "FinalizationRegistry": {
+        "body": [
+            "new FinalizationRegistry($1 => $1)"
+        ],
+        "description": "Lets you request a callback when an object is garbage-collected.",
+        "prefix": "fin"
+    },
     "for": {
         "body": [
             "const $1Len = $1.length",
@@ -878,6 +913,13 @@
         "description": "Converts a value to a JSON string.",
         "prefix": "jsonstr"
     },
+    "nullish coalescing": {
+        "body": [
+            "$1 ?? $2"
+        ],
+        "description": "Returns the right-hand operand when the left-hand operand is null or undefined.",
+        "prefix": "nulc"
+    },
     "Object.entries(obj)": {
         "body": [
             ".entries($1)"
@@ -912,6 +954,13 @@
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
         "prefix": "objfre"
+    },
+    "Object.hasOwn": {
+        "body": [
+            ".hasOwn($1)"
+        ],
+        "description": "Returns true if the specified object has the indicated property as its own property.",
+        "prefix": ".hao"
     },
     "Object.is": {
         "body": [
@@ -968,5 +1017,54 @@
         ],
         "description": "The Object.isSealed() determines if an object is sealed.",
         "prefix": "objiss"
+    },
+    "optional chaining": {
+        "body": [
+            "$1?.$2"
+        ],
+        "description": "Accesses the value of a property deep within a chain of connected objects without having to explicitly validate that each reference in the chain is valid.",
+        "prefix": "opc"
+    },
+    "Promise.allSettled": {
+        "body": [
+            "Promise.allSettled($1)"
+        ],
+        "description": "Returns a promise that resolves after all of the given promises have either fulfilled or rejected.",
+        "prefix": "prmals"
+    },
+    "Promise.any": {
+        "body": [
+            "Promise.any($1)"
+        ],
+        "description": "Returns a promise that fulfills as soon as any of the promises fulfills.",
+        "prefix": "prmany"
+    },
+    "Promise.catch": {
+        "body": [
+            ".catch($1)"
+        ],
+        "description": "Appends a rejection handler callback to the promise.",
+        "prefix": ".cat"
+    },
+    "String.prototype.matchAll": {
+        "body": [
+            ".matchAll($1)"
+        ],
+        "description": "Returns an iterator of all results matching a string against a regular expression.",
+        "prefix": ".ma"
+    },
+    "String.prototype.replaceAll": {
+        "body": [
+            ".replaceAll($1, )"
+        ],
+        "description": "Returns a new string with all matches of a pattern replaced by a replacement.",
+        "prefix": ".rea"
+    },
+    "WeakRef": {
+        "body": [
+            "new WeakRef($1)"
+        ],
+        "description": "Lets you hold a weak reference to another object, without preventing that object from getting garbage-collected.",
+        "prefix": "wea"
     }
 }
