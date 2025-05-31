@@ -1,68 +1,24 @@
 {
-    "anonymous function": {
-        "body": [
-            "function() {",
-            "\t$1",
-            "}"
-        ],
-        "description": "An anonymous function is a function without a function name.",
-        "prefix": "fu"
-    },
-    "Array": {
-        "body": [
-            "Array"
-        ],
-        "description": "The JavaScript Array class is a global object that is used in the construction of arrays which are high-level, list-like objects.",
-        "prefix": "ar"
-    },
-    "array sum": {
-        "body": [
-            "$1.reduce((acc, cur) => acc + cur, 0)"
-        ],
-        "description": "Sums all values in an array.",
-        "prefix": "asu"
-    },
-    "Array.from(arrayLike, mapFn, thisArg)": {
-        "body": [
-            ".from($1)"
-        ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": ".fr"
-    },
-    "Array.from(arrayLike, mapFn, thisArg) ": {
+    "Array.from": {
         "body": [
             "Array.from($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "af"
+        "prefix": "arrfr"
     },
-    "Array.isArray(value)": {
-        "body": [
-            ".isArray($1)"
-        ],
-        "description": "The Array.isArray() method determines whether the passed value is an Array.",
-        "prefix": ".is"
-    },
-    "Array.isArray(value) ": {
+    "Array.isArray": {
         "body": [
             "Array.isArray($1)"
         ],
         "description": "The Array.isArray() method determines whether the passed value is an Array.",
-        "prefix": "ai"
+        "prefix": "arrisa"
     },
-    "Array.of(element0, element1, ... , elementN)": {
-        "body": [
-            ".of($1)"
-        ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": ".of"
-    },
-    "Array.of(element0, element1, ... , elementN) ": {
+    "Array.of": {
         "body": [
             "Array.of($1)"
         ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "ao"
+        "description": "The Array.of() method creates a new Array instance with a variable number of arguments.",
+        "prefix": "arrof"
     },
     "Array.prototype.at": {
         "body": [
@@ -83,7 +39,7 @@
             ".copyWithin($1)"
         ],
         "description": "The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length.",
-        "prefix": ".co"
+        "prefix": ".cow"
     },
     "Array.prototype.entries": {
         "body": [
@@ -125,7 +81,7 @@
             ".findIndex($1 => $1)"
         ],
         "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.",
-        "prefix": ".fndx"
+        "prefix": ".fii"
     },
     "Array.prototype.findLast": {
         "body": [
@@ -139,7 +95,7 @@
             ".findLastIndex($1)"
         ],
         "description": "Returns the index of the last element in the array that satisfies the provided testing function.",
-        "prefix": ".fli"
+        "prefix": ".fili"
     },
     "Array.prototype.flat": {
         "body": [
@@ -160,7 +116,7 @@
             ".forEach($1)"
         ],
         "description": "The forEach() method executes a provided function once for each array element.",
-        "prefix": ".frch"
+        "prefix": ".foe"
     },
     "Array.prototype.includes": {
         "body": [
@@ -195,7 +151,7 @@
             ".lastIndexOf($1)"
         ],
         "description": "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.",
-        "prefix": ".la"
+        "prefix": ".laio"
     },
     "Array.prototype.map": {
         "body": [
@@ -219,19 +175,25 @@
         "prefix": ".pu"
     },
     "Array.prototype.reduce": {
-        "body": [".reduce($1)"],
+        "body": [
+            ".reduce($1)"
+        ],
         "description": "The reduce() method executes a reducer function on each element of the array.",
-        "prefix": ".red"
+        "prefix": ".re"
     },
     "Array.prototype.reduceRight": {
-        "body": [".reduceRight($1)"],
+        "body": [
+            ".reduceRight($1)"
+        ],
         "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left).",
         "prefix": ".rer"
     },
     "Array.prototype.reverse": {
-        "body": [".reverse()"],
+        "body": [
+            ".reverse()"
+        ],
         "description": "The reverse() method reverses an array in place.",
-        "prefix": ".rev"
+        "prefix": ".re"
     },
     "Array.prototype.shift": {
         "body": [
@@ -288,7 +250,7 @@
             ".splice($1)"
         ],
         "description": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
-        "prefix": ".spl"
+        "prefix": ".sp"
     },
     "Array.prototype.toLocaleString": {
         "body": [
@@ -316,7 +278,7 @@
             ".toSpliced($1)"
         ],
         "description": "The toSpliced() method of Array instances returns a new array with some elements removed and/or replaced at a given index. This method does not modify the original array.",
-        "prefix": ".tosp"
+        "prefix": ".tos"
     },
     "Array.prototype.toString": {
         "body": [
@@ -330,14 +292,14 @@
             ".unshift($1)"
         ],
         "description": "The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.",
-        "prefix": ".uns"
+        "prefix": ".un"
     },
     "Array.prototype.values": {
         "body": [
             ".values($1)"
         ],
         "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
-        "prefix": ".val"
+        "prefix": ".va"
     },
     "Array.prototype.with": {
         "body": [
@@ -346,204 +308,138 @@
         "description": "The with() method of Array instances is a copying method that returns a new array with a changed element at a given index.",
         "prefix": ".wi"
     },
-    "class": {
-        "body": [
-            "class $1 {",
-            "\tconstructor($2) {}",
-            "}"
-        ],
-        "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
-        "prefix": "cla"
-    },
-    "clone object": {
-        "body": [
-            "const $2 = { ...$1 }"
-        ],
-        "description": "Clones an object using the spread operator.",
-        "prefix": "clo"
-    },
-    "console.assert": {
+    "Console.assert": {
         "body": [
             "console.assert($1, '$2')"
         ],
         "description": "Writes an error message to the console if the assertion is false.",
-        "prefix": "cas"
+        "prefix": "conas"
     },
-    "console.clear": {
+    "Console.clear": {
         "body": [
             "console.clear()"
         ],
         "description": "Clears the console.",
-        "prefix": "ccl"
+        "prefix": "concl"
     },
-    "console.count": {
+    "Console.count": {
         "body": [
             "console.count($1)"
         ],
         "description": "Logs the number of times that this particular call to count() has been called.",
-        "prefix": "cco"
+        "prefix": "conco"
     },
-    "console.countReset": {
+    "Console.countReset": {
         "body": [
             "console.countReset($1)"
         ],
         "description": "Resets the count for the specified label.",
-        "prefix": "ccr"
+        "prefix": "concor"
     },
-    "console.debug": {
+    "Console.debug": {
         "body": [
             "console.debug($1)"
         ],
         "description": "Outputs a debug message to the Web Console.",
-        "prefix": "cde"
+        "prefix": "conde"
     },
-    "console.dir": {
+    "Console.dir": {
         "body": [
             "console.dir($1)"
         ],
         "description": "Displays an interactive list of the properties of the specified JavaScript object.",
-        "prefix": "cd"
+        "prefix": "condi"
     },
-    "console.error": {
+    "Console.error": {
         "body": [
             "console.error($1)"
         ],
         "description": "Outputs an error message to the Web Console.",
-        "prefix": "cer"
+        "prefix": "coner"
     },
-    "console.group": {
+    "Console.group": {
         "body": [
             "console.group($1)"
         ],
         "description": "Creates a new inline group in the console.",
-        "prefix": "cgr"
+        "prefix": "congr"
     },
-    "console.groupCollapsed": {
+    "Console.groupCollapsed": {
         "body": [
             "console.groupCollapsed($1)"
         ],
         "description": "Creates a new inline group in the console, but collapsed by default.",
-        "prefix": "cgc"
+        "prefix": "congrc"
     },
-    "console.groupEnd": {
+    "Console.groupEnd": {
         "body": [
             "console.groupEnd()"
         ],
         "description": "Exits the current inline group in the console.",
-        "prefix": "cge"
+        "prefix": "congre"
     },
-    "console.info": {
+    "Console.info": {
         "body": [
             "console.info($1)"
         ],
         "description": "Outputs an informational message to the Web Console.",
-        "prefix": "ci"
+        "prefix": "conin"
     },
-    "console.log": {
+    "Console.log": {
         "body": [
             "console.log($1)"
         ],
         "description": "Outputs a message to the Web Console.",
-        "prefix": "clg"
+        "prefix": "conlo"
     },
-    "console.log JSON": {
-        "body": [
-            "console.log(JSON.stringify($1, null, 2))"
-        ],
-        "description": "Logs a JavaScript object as pretty-printed JSON.",
-        "prefix": "clj"
-    },
-    "console.table": {
+    "Console.table": {
         "body": [
             "console.table($1)"
         ],
         "description": "Displays tabular data as a table in the console.",
-        "prefix": "cta"
+        "prefix": "conta"
     },
-    "console.time": {
+    "Console.time": {
         "body": [
             "console.time($1)"
         ],
         "description": "Starts a timer you can use to track how long an operation takes.",
-        "prefix": "cti"
+        "prefix": "conti"
     },
-    "console.timeEnd": {
+    "Console.timeEnd": {
         "body": [
             "console.timeEnd($1)"
         ],
         "description": "Stops a timer that was previously started by console.time().",
-        "prefix": "cte"
+        "prefix": "contie"
     },
-    "console.timeLog": {
+    "Console.timeLog": {
         "body": [
             "console.timeLog($1)"
         ],
         "description": "Logs the current value of a timer that was previously started by console.time().",
-        "prefix": "ctl"
+        "prefix": "contil"
     },
-    "console.trace": {
+    "Console.trace": {
         "body": [
             "console.trace($1)"
         ],
         "description": "Outputs a stack trace to the Web Console.",
-        "prefix": "ctr"
+        "prefix": "contr"
     },
-    "console.warn": {
+    "Console.warn": {
         "body": [
             "console.warn($1)"
         ],
         "description": "Outputs a warning message to the Web Console.",
-        "prefix": "cwn"
-    },
-    "debounce function": {
-        "body": [
-            "function debounce(fn, delay) {",
-            "  let timeoutId;",
-            "  return function(...args) {",
-            "    clearTimeout(timeoutId);",
-            "    timeoutId = setTimeout(() => fn.apply(this, args), delay);",
-            "  };",
-            "}"
-        ],
-        "description": "Creates a debounced function that delays invoking fn until after delay ms have elapsed.",
-        "prefix": "debfn"
+        "prefix": "conwa"
     },
     "debugger": {
         "body": [
             "debugger"
         ],
         "description": "The debugger statement invokes any available debugging functionality, such as setting a breakpoint.",
-        "prefix": "deb"
-    },
-    "deep clone object": {
-        "body": [
-            "const $2 = JSON.parse(JSON.stringify($1))"
-        ],
-        "description": "Deep clones an object using JSON methods.",
-        "prefix": "dcl"
-    },
-    "default": {
-        "body": [
-            "default"
-        ],
-        "description": "Keyword",
-        "prefix": "def"
-    },
-    "do while": {
-        "body": [
-            "do {",
-            "\t$1",
-            "} while ()"
-        ],
-        "description": "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false.",
-        "prefix": "do"
-    },
-    "document": {
-        "body": [
-            "document"
-        ],
-        "description": "document",
-        "prefix": "doc"
+        "prefix": "de"
     },
     "Document.createElement": {
         "body": [
@@ -557,63 +453,42 @@
             ".add($1)"
         ],
         "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored.",
-        "prefix": ".add"
+        "prefix": ".ad"
     },
     "Element.classList": {
         "body": [
             ".classList"
         ],
         "description": "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element.",
-        "prefix": ".cla"
+        "prefix": ".cll"
     },
     "Element.classList.contains": {
         "body": [
             ".contains($1)"
         ],
         "description": "Checks if the specified class value exists in the element's class attribute.",
-        "prefix": ".con"
+        "prefix": ".co"
     },
     "Element.classList.remove": {
         "body": [
             ".remove($1)"
         ],
         "description": "Removes the specified class values.",
-        "prefix": ".rem"
+        "prefix": ".re"
     },
     "Element.classList.replace": {
         "body": [
             ".replace($1, )"
         ],
         "description": "Replaces an existing class with a new class.",
-        "prefix": ".rep"
+        "prefix": ".re"
     },
     "Element.classList.toggle": {
         "body": [
             ".toggle($1)"
         ],
         "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true.",
-        "prefix": ".tog"
-    },
-    "Element.getElementById": {
-        "body": [
-            ".getElementById($1)"
-        ],
-        "description": "Returns the element that has the ID attribute with the specified value.",
-        "prefix": ".gebi"
-    },
-    "Element.getElementsByClassName": {
-        "body": [
-            ".getElementsByClassName($1)"
-        ],
-        "description": "Returns a live HTMLCollection of elements with the given class name.",
-        "prefix": ".gebc"
-    },
-    "Element.getElementsByTagName": {
-        "body": [
-            ".getElementsByTagName($1)"
-        ],
-        "description": "Returns a live HTMLCollection of elements with the given tag name.",
-        "prefix": ".gebt"
+        "prefix": ".to"
     },
     "Element.getAttribute": {
         "body": [
@@ -622,6 +497,34 @@
         "description": "Returns the value of a specified attribute on the element.",
         "prefix": ".gea"
     },
+    "Element.getElementById": {
+        "body": [
+            ".getElementById($1)"
+        ],
+        "description": "Returns the element that has the ID attribute with the specified value.",
+        "prefix": ".geebi"
+    },
+    "Element.getElementsByClassName": {
+        "body": [
+            ".getElementsByClassName($1)"
+        ],
+        "description": "Returns a live HTMLCollection of elements with the given class name.",
+        "prefix": ".geebcn"
+    },
+    "Element.getElementsByTagName": {
+        "body": [
+            ".getElementsByTagName($1)"
+        ],
+        "description": "Returns a live HTMLCollection of elements with the given tag name.",
+        "prefix": ".geebtn"
+    },
+    "Element.removeAttribute": {
+        "body": [
+            ".removeAttribute($1)"
+        ],
+        "description": "Removes the attribute with the specified name from the element.",
+        "prefix": ".rea"
+    },
     "Element.setAttribute": {
         "body": [
             ".setAttribute($1, )"
@@ -629,172 +532,100 @@
         "description": "Sets the value of an attribute on the specified element.",
         "prefix": ".sea"
     },
-    "Element.removeAttribute": {
-        "body": [".removeAttribute($1)"],
-        "description": "Removes the attribute with the specified name from the element.",
-        "prefix": ".rea"
-    },
     "EventTarget.addEventListener": {
         "body": [
             ".addEventListener($1, )"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": ".add"
+        "prefix": ".adel"
     },
-    "EventTarget.addEventListener blur": {
+    "EventTarget.addEventListener.blur": {
         "body": [
-            "blur"
+            ".addEventListener($1, 'blur')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "blu"
+        "prefix": "adelbl"
     },
-    "EventTarget.addEventListener change": {
+    "EventTarget.addEventListener.change": {
         "body": [
-            "change"
+            ".addEventListener($1, 'change')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "cha"
+        "prefix": "adelch"
     },
-    "EventTarget.addEventListener click": {
+    "EventTarget.addEventListener.click": {
         "body": [
-            "click"
+            ".addEventListener($1, 'click')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "cli"
+        "prefix": "adelcl"
     },
-    "EventTarget.addEventListener focus": {
+    "EventTarget.addEventListener.focus": {
         "body": [
-            "focus"
+            ".addEventListener($1, 'focus')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "foc"
+        "prefix": "adelfo"
     },
-    "EventTarget.addEventListener focusout": {
+    "EventTarget.addEventListener.focusout": {
         "body": [
-            "focusout"
+            ".addEventListener($1, 'focusout')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "foc"
+        "prefix": "adelfo"
     },
-    "EventTarget.addEventListener input": {
+    "EventTarget.addEventListener.input": {
         "body": [
-            "input"
+            ".addEventListener($1, 'input')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "inp"
+        "prefix": "adelin"
     },
-    "EventTarget.addEventListener keydown": {
+    "EventTarget.addEventListener.keydown": {
         "body": [
-            "keydown"
+            ".addEventListener($1, 'keydown')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "key"
+        "prefix": "adelke"
     },
-    "EventTarget.addEventListener mouseout": {
+    "EventTarget.addEventListener.mouseout": {
         "body": [
-            "mouseout"
+            ".addEventListener($1, 'mouseout')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "mou"
+        "prefix": "adelmo"
     },
-    "EventTarget.addEventListener mouseover": {
+    "EventTarget.addEventListener.mouseover": {
         "body": [
-            "mouseover"
+            ".addEventListener($1, 'mouseover')"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
-        "prefix": "mou"
+        "prefix": "adelmo"
     },
     "EventTarget.dispatchEvent": {
         "body": [
             ".dispatchEvent($1)"
         ],
         "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order.",
-        "prefix": ".dis"
+        "prefix": ".die"
     },
     "EventTarget.removeEventListener": {
-        "body": [".removeEventListener($1, )"],
+        "body": [
+            ".removeEventListener($1, )"
+        ],
         "description": "Removes an event listener from the element.",
-        "prefix": ".rel"
+        "prefix": ".reel"
     },
-    "export": {
+    "Function.anonymous": {
         "body": [
-            "export"
-        ],
-        "description": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. The value of an imported binding is subject to change in the module that exports it. When a module updates the value of a binding that it exports, the update will be visible in its imported value.",
-        "prefix": "exp"
-    },
-    "FinalizationRegistry": {
-        "body": [
-            "new FinalizationRegistry($1 => $1)"
-        ],
-        "description": "Lets you request a callback when an object is garbage-collected.",
-        "prefix": "fin"
-    },
-    "for": {
-        "body": [
-            "const $1Len = $1.length",
-            "for (let i = 0; i < $1Len; i += 1) {",
-            "\tconst $1Item = $1[i]",
+            "function() {",
+            "\t$1",
             "}"
         ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
-        "prefix": "for"
+        "description": "An anonymous function is a function without a function name.",
+        "prefix": "fu"
     },
-    "for await of": {
-        "body": [
-            "for await (let item of $1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
-        "prefix": "foraw"
-    },
-    "for in": {
-        "body": [
-            "for (const key in $1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for...in statement iterates over all non-Symbol, enumerable properties of an object.",
-        "prefix": "forin"
-    },
-    "for min": {
-        "body": [
-            "for (let j = 0; j < $1Len; j += 1) {",
-            "\tconst $1Item = $1[j]",
-            "}"
-        ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
-        "prefix": "form"
-    },
-    "for of": {
-        "body": [
-            "for (const item of $1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
-        "prefix": "forof"
-    },
-    "for reverse": {
-        "body": [
-            "for (let r = $1Len - 1; r >= 0; r -= 1) {",
-            "\tconst $1Item = $1[r]",
-            "}"
-        ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
-        "prefix": "forr"
-    },
-    "function": {
-        "body": [
-            "function $1() {",
-            "\t",
-            "}"
-        ],
-        "description": "A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function.",
-        "prefix": "fun"
-    },
-    "function arrow": {
+    "Function.arrow": {
         "body": [
             "($1) => {",
             "\t",
@@ -803,14 +634,36 @@
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
         "prefix": "fnar"
     },
-    "function arrow min": {
+    "Function.arrowMin": {
         "body": [
             "($1) => $1"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
         "prefix": "fnarm"
     },
-    "function iife": {
+    "Function.named": {
+        "body": [
+            "function $1() {",
+            "\t",
+            "}"
+        ],
+        "description": "A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function.",
+        "prefix": "fun"
+    },
+    "Function.debounce": {
+        "body": [
+            "function debounce(fn, delay) {",
+            "  let timeoutId;",
+            "  return function(...args) {",
+            "    clearTimeout(timeoutId);",
+            "    timeoutId = setTimeout(() => fn.apply(this, args), delay);",
+            "  };",
+            "}"
+        ],
+        "description": "Creates a debounced function that delays invoking fn until after delay ms have elapsed.",
+        "prefix": "fu"
+    },
+    "Function.iife": {
         "body": [
             "(function() {",
             "\t$1",
@@ -847,60 +700,209 @@
         "description": "The call() method calls a function with a given this value and arguments provided individually.",
         "prefix": ".cal"
     },
-    "Import": {
+    "JSON.parse": {
+        "body": [
+            "JSON.parse($1)"
+        ],
+        "description": "Parses a JSON string.",
+        "prefix": "jsopa"
+    },
+    "JSON.stringify": {
+        "body": [
+            "JSON.stringify($1)"
+        ],
+        "description": "Converts a value to a JSON string.",
+        "prefix": "jsost"
+    },
+    "Keyword.class": {
+        "body": [
+            "class $1 {",
+            "\tconstructor($2) {}",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
+        "prefix": "cl"
+    },
+    "Keyword.default": {
+        "body": [
+            "default"
+        ],
+        "description": "Keyword",
+        "prefix": "de"
+    },
+    "Keyword.document": {
+        "body": [
+            "document"
+        ],
+        "description": "document",
+        "prefix": "doc"
+    },
+    "Keyword.export": {
+        "body": [
+            "export"
+        ],
+        "description": "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement. The value of an imported binding is subject to change in the module that exports it. When a module updates the value of a binding that it exports, the update will be visible in its imported value.",
+        "prefix": "ex"
+    },
+    "Pattern,arraySum": {
+        "body": [
+            "$1.reduce((acc, cur) => acc + cur, 0)"
+        ],
+        "description": "Sums all values in an array.",
+        "prefix": "saviaa"
+    },
+    "Pattern.cloneObject": {
+        "body": [
+            "const $2 = { ...$1 }"
+        ],
+        "description": "Clones an object using the spread operator.",
+        "prefix": "clo"
+    },
+    "Pattern.consoleLogJson": {
+        "body": [
+            "console.log(JSON.stringify($1, null, 2))"
+        ],
+        "description": "Logs a JavaScript object as pretty-printed JSON.",
+        "prefix": "lajoapj"
+    },
+    "Pattern.debounceFunction": {
+        "body": [
+            "function debounce(fn, delay) {",
+            "  let timeoutId;",
+            "  return function(...args) {",
+            "    clearTimeout(timeoutId);",
+            "    timeoutId = setTimeout(() => fn.apply(this, args), delay);",
+            "  };",
+            "}"
+        ],
+        "description": "Creates a debounced function that delays invoking fn until after delay ms have elapsed.",
+        "prefix": "debfn"
+    },
+    "Pattern.deepCloneObject": {
+        "body": [
+            "const $2 = JSON.parse(JSON.stringify($1))"
+        ],
+        "description": "Deep clones an object using JSON methods.",
+        "prefix": "dcl"
+    },
+    "Pattern.doWhile": {
+        "body": [
+            "do {",
+            "\t$1",
+            "} while ()"
+        ],
+        "description": "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false.",
+        "prefix": "do"
+    },
+    "Pattern.FinalizationRegistry": {
+        "body": [
+            "new FinalizationRegistry($1 => $1)"
+        ],
+        "description": "Lets you request a callback when an object is garbage-collected.",
+        "prefix": "fin"
+    },
+    "Pattern.for": {
+        "body": [
+            "const $1Len = $1.length",
+            "for (let i = 0; i < $1Len; i += 1) {",
+            "\tconst $1Item = $1[i]",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "for"
+    },
+    "Pattern.forAwaitOf": {
+        "body": [
+            "for await (let item of $1) {",
+            "\t",
+            "}"
+        ],
+        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
+        "prefix": "foraw"
+    },
+    "Pattern.forIn": {
+        "body": [
+            "for (const key in $1) {",
+            "\t",
+            "}"
+        ],
+        "description": "The for...in statement iterates over all non-Symbol, enumerable properties of an object.",
+        "prefix": "forin"
+    },
+    "Pattern.forMin": {
+        "body": [
+            "for (let j = 0; j < $1Len; j += 1) {",
+            "\tconst $1Item = $1[j]",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "form"
+    },
+    "Pattern.forOf": {
+        "body": [
+            "for (const item of $1) {",
+            "\t",
+            "}"
+        ],
+        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
+        "prefix": "forof"
+    },
+    "Pattern.forReverse": {
+        "body": [
+            "for (let r = $1Len - 1; r >= 0; r -= 1) {",
+            "\tconst $1Item = $1[r]",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "forr"
+    },
+    "Pattern.import": {
         "body": [
             "import  from $1"
         ],
         "description": "The static import statement is used to import bindings which are exported by another module.",
         "prefix": "imp"
     },
-    "is empty array": {
+    "Pattern.isEmptyArray": {
         "body": [
             "Array.isArray($1) && $1.length === 0"
         ],
         "description": "Checks if an array is empty.",
         "prefix": "iea"
     },
-    "is empty object": {
+    "Pattern.isEmptyObject": {
         "body": [
             "Object.keys($1).length === 0"
         ],
         "description": "Checks if an object is empty.",
         "prefix": "ieo"
     },
-    "JSON.parse": {
-        "body": ["JSON.parse($1)"],
-        "description": "Parses a JSON string.",
-        "prefix": "jsopa"
-    },
-    "JSON.stringify": {
-        "body": ["JSON.stringify($1)"],
-        "description": "Converts a value to a JSON string.",
-        "prefix": "jsost"
-    },
-    "Promise.resolve": {
-        "body": ["Promise.resolve($1)"],
-        "description": "Returns a Promise object that is resolved with a given value.",
-        "prefix": "prore"
-    },
-    "remove duplicates array": {
-        "body": ["[...new Set($1)]"],
-        "description": "Removes duplicate values from an array.",
-        "prefix": "rda"
-    },
-    "deep clone object": {
-        "body": ["const $2 = JSON.parse(JSON.stringify($1))"],
-        "description": "Deep clones an object using JSON methods.",
-        "prefix": "dcl"
-    },
-    "random integer": {
-        "body": ["Math.floor(Math.random() * ($2 - $1 + 1)) + $1"],
+    "Pattern.randomInteger": {
+        "body": [
+            "Math.floor(Math.random() * ($2 - $1 + 1)) + $1"
+        ],
         "description": "Generates a random integer between two values, inclusive.",
         "prefix": "ran"
     },
-    "short arrow function": {
-        "body": ["const $1 = ($2) => $3"],
+    "Pattern.removeDuplicatesArray": {
+        "body": [
+            "[...new Set($1)]"
+        ],
+        "description": "Removes duplicate values from an array.",
+        "prefix": "rda"
+    },
+    "Pattern.shortArrowFunction": {
+        "body": [
+            "const $1 = ($2) => $3"
+        ],
         "description": "Creates a concise arrow function.",
         "prefix": "saf"
+    },
+    "Promise.resolve": {
+        "body": [
+            "Promise.resolve($1)"
+        ],
+        "description": "Returns a Promise object that is resolved with a given value.",
+        "prefix": "prore"
     }
 }
