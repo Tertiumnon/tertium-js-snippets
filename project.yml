@@ -1,3 +1,21 @@
 type: vscode-extension
-publish_on:
+slug: tertium-js-snippets
+listed_on:
   - https://tertiumnon.github.io
+display_name:
+  en: "Tertium JS Snippets"
+summary:
+  en: "Collection of JavaScript snippets for Visual Studio Code."
+languages:
+  - en
+default_language: en
+platforms:
+  vscode:
+    settings:
+      publisher: Tertiumnon
+team:
+  - name: Vitalii Balabanov
+    roles:
+      - owner
+      - developer
+    github: Tertiumnon
